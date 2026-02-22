@@ -1,0 +1,1463 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Examen Civique — Entraînement Naturalisation 🇫🇷</title>
+<meta name="description" content="QCM d'entraînement gratuit pour l'examen civique français - mention naturalisation. 244+ questions, chrono 45min, corrections détaillées.">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;700;800&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--bleu:#000091;--rouge:#E1000F;--blanc:#FFFFFF;--gcl:#F6F6F6;--gris:#E5E5E5;--gtx:#666;--noir:#1B1B35;--vert:#008941;--vcl:#E8F5E9;--rcl:#FDECEA;--bcl:#E8EDFF;--or:#C9A84C;--vio:#A558C7;--r:12px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Source Serif 4',Georgia,serif;background:var(--gcl);color:var(--noir);min-height:100dvh;-webkit-font-smoothing:antialiased}
+button{-webkit-tap-highlight-color:transparent}
+
+.hd{background:var(--bleu);color:#fff;padding:18px 16px 14px;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,0,83,.15)}
+.hd-top{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.tri{width:5px;height:36px;border-radius:3px;background:linear-gradient(#002395 33%,#FFF 33%,#FFF 66%,#ED2939 66%);flex-shrink:0}
+.hd h1{font-family:'Bricolage Grotesque',sans-serif;font-size:16px;font-weight:700;line-height:1.2}
+.hd .sub{font-size:11px;opacity:.7;margin-top:1px}
+.pb-c{background:rgba(255,255,255,.15);border-radius:6px;height:7px;overflow:hidden}
+.pb{height:100%;background:linear-gradient(90deg,var(--or),#E8D48C);border-radius:6px;transition:width .5s cubic-bezier(.4,0,.2,1);width:0}
+.pi{display:flex;justify-content:space-between;font-family:'Bricolage Grotesque',sans-serif;font-size:11px;margin-top:5px;opacity:.8}
+.tm{font-family:'Bricolage Grotesque',sans-serif;font-size:13px;font-weight:600;opacity:.85;margin-left:auto;white-space:nowrap}
+
+.sc{display:none}.sc.on{display:block}
+.bp{display:block;width:100%;padding:15px;background:var(--bleu);color:#fff;border:none;border-radius:var(--r);font-family:'Bricolage Grotesque',sans-serif;font-size:15px;font-weight:700;cursor:pointer;transition:all .15s;text-align:center}
+.bp:active{transform:scale(.97);background:#000070}
+.bs{display:block;width:100%;padding:13px;background:0 0;color:var(--bleu);border:2px solid var(--bleu);border-radius:var(--r);font-family:'Bricolage Grotesque',sans-serif;font-size:14px;font-weight:600;cursor:pointer;margin-top:10px}
+.bs:active{background:var(--bcl)}
+
+/* START */
+.ss{padding:20px 16px;max-width:600px;margin:0 auto}
+.cd{background:#fff;border-radius:var(--r);padding:24px 18px;box-shadow:0 1px 4px rgba(0,0,0,.06);margin-bottom:14px}
+.cd h2{font-family:'Bricolage Grotesque',sans-serif;font-size:22px;font-weight:800;margin-bottom:10px;line-height:1.15}
+.cd p{font-size:14px;line-height:1.6;color:var(--gtx);margin-bottom:6px}
+.bg{display:inline-block;background:var(--bleu);color:#fff;font-family:'Bricolage Grotesque',sans-serif;font-size:10px;font-weight:700;padding:3px 9px;border-radius:20px;text-transform:uppercase;letter-spacing:.5px;margin-bottom:12px}
+.ig{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:16px 0}
+.ii{background:var(--gcl);padding:12px 10px;border-radius:10px;text-align:center}
+.ii .n{font-family:'Bricolage Grotesque',sans-serif;font-size:20px;font-weight:800;color:var(--bleu)}
+.ii .l{font-size:11px;color:var(--gtx);margin-top:2px}
+.tl{list-style:none;margin:14px 0}
+.tl li{padding:7px 0;border-bottom:1px solid var(--gris);font-size:13px;display:flex;align-items:center;gap:8px}
+.tl li:last-child{border:none}
+.td{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.disc{margin-top:14px;padding:12px;background:#fff;border-radius:var(--r);border-left:4px solid var(--or);font-size:12px;line-height:1.5;color:var(--gtx)}
+.disc a{color:var(--bleu)}
+
+/* SHARE BOX */
+.share-box{background:#fff;border-radius:var(--r);padding:20px 18px;box-shadow:0 1px 4px rgba(0,0,0,.06);margin-top:14px}
+.share-box h3{font-family:'Bricolage Grotesque',sans-serif;font-size:15px;font-weight:700;margin-bottom:6px}
+.share-box p{font-size:13px;color:var(--gtx);line-height:1.5;margin-bottom:12px}
+.share-methods{display:flex;flex-direction:column;gap:8px}
+.share-method{background:var(--gcl);padding:12px 14px;border-radius:10px;font-size:13px;line-height:1.5}
+.share-method strong{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;display:block;margin-bottom:3px}
+.share-method code{background:var(--gris);padding:2px 6px;border-radius:4px;font-size:12px;word-break:break-all}
+.share-btns{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
+.sbtn{padding:10px 14px;border-radius:10px;border:2px solid var(--gris);background:#fff;font-family:'Bricolage Grotesque',sans-serif;font-size:13px;font-weight:600;cursor:pointer;transition:all .15s;display:flex;align-items:center;gap:6px}
+.sbtn:active{transform:scale(.96)}
+.sbtn:hover{border-color:var(--bleu);background:var(--bcl)}
+.toast{position:fixed;bottom:80px;left:50%;transform:translateX(-50%);background:var(--noir);color:#fff;padding:10px 20px;border-radius:10px;font-family:'Bricolage Grotesque',sans-serif;font-size:14px;font-weight:600;z-index:200;opacity:0;transition:opacity .3s;pointer-events:none}
+.toast.show{opacity:1}
+
+/* QUIZ */
+.qs{padding:18px 16px 100px;max-width:600px;margin:0 auto}
+.qc{background:#fff;border-radius:var(--r);padding:20px 16px;box-shadow:0 1px 4px rgba(0,0,0,.06);animation:su .35s cubic-bezier(.22,1,.36,1)}
+@keyframes su{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+.tt{display:inline-block;font-family:'Bricolage Grotesque',sans-serif;font-size:10px;font-weight:600;padding:3px 9px;border-radius:20px;text-transform:uppercase;letter-spacing:.4px}
+.qn{font-family:'Bricolage Grotesque',sans-serif;font-size:11px;font-weight:700;color:var(--gtx);margin:8px 0}
+.qt{font-size:16px;font-weight:600;line-height:1.45;color:var(--noir);margin-bottom:18px;font-family:'Bricolage Grotesque',sans-serif}
+.opts{display:flex;flex-direction:column;gap:9px}
+.ob{display:flex;align-items:flex-start;gap:11px;padding:13px;background:var(--gcl);border:2px solid transparent;border-radius:10px;cursor:pointer;transition:all .15s;text-align:left;font-size:14px;line-height:1.4;font-family:'Source Serif 4',serif;color:var(--noir);width:100%}
+.ob:active:not(.lk){transform:scale(.98)}
+.ol{display:flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;background:var(--gris);font-family:'Bricolage Grotesque',sans-serif;font-size:12px;font-weight:700;flex-shrink:0;transition:all .15s}
+.ob:hover:not(.lk){border-color:var(--bleu);background:var(--bcl)}
+.ob:hover:not(.lk) .ol{background:var(--bleu);color:#fff}
+.ob.ok{border-color:var(--vert);background:var(--vcl)}.ob.ok .ol{background:var(--vert);color:#fff}
+.ob.ko{border-color:var(--rouge);background:var(--rcl)}.ob.ko .ol{background:var(--rouge);color:#fff}
+.ob.lk{cursor:default;opacity:.45}.ob.ok.lk,.ob.ko.lk{opacity:1}
+.ex{margin-top:14px;padding:12px;border-radius:10px;border-left:4px solid;font-size:13px;line-height:1.5;animation:su .3s ease}
+.ex.eok{background:var(--vcl);border-color:var(--vert)}.ex.eko{background:var(--rcl);border-color:var(--rouge)}
+.nbc{position:fixed;bottom:0;left:0;right:0;padding:10px 16px;padding-bottom:max(10px,env(safe-area-inset-bottom));background:linear-gradient(to top,var(--gcl) 80%,transparent);z-index:50;display:none}
+.nbc.vi{display:block}.nbc .bp{max-width:600px;margin:0 auto}
+
+/* RESULTS */
+.rs{padding:20px 16px;max-width:600px;margin:0 auto}
+.rc{background:#fff;border-radius:var(--r);padding:28px 18px;text-align:center;box-shadow:0 1px 4px rgba(0,0,0,.06);margin-bottom:14px}
+.ri{font-size:52px;margin-bottom:10px}
+.rc h2{font-family:'Bricolage Grotesque',sans-serif;font-size:22px;font-weight:800;margin-bottom:6px}
+.sb{font-family:'Bricolage Grotesque',sans-serif;font-size:44px;font-weight:800;color:var(--bleu);margin:10px 0}
+.sb .st{font-size:22px;color:var(--gtx);font-weight:600}
+.sbg{height:10px;background:var(--gris);border-radius:6px;margin:14px 0;overflow:hidden;position:relative}
+.sbf{height:100%;border-radius:6px;transition:width 1.5s cubic-bezier(.22,1,.36,1);width:0}
+.sbt{position:absolute;left:80%;top:-3px;bottom:-3px;width:2px;background:var(--noir);opacity:.25}
+.stl{font-size:10px;color:var(--gtx);margin-top:3px;text-align:right;padding-right:16%}
+.rb{background:#fff;border-radius:var(--r);padding:18px;box-shadow:0 1px 4px rgba(0,0,0,.06);margin-bottom:14px}
+.rb h3{font-family:'Bricolage Grotesque',sans-serif;font-size:14px;font-weight:700;margin-bottom:12px}
+.bi{display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid var(--gris);font-size:13px}
+.bi:last-child{border:none}
+.bi .tn{display:flex;align-items:center;gap:7px}
+.bsc{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:13px}
+
+/* ERRORS */
+.errs{background:#fff;border-radius:var(--r);padding:18px;box-shadow:0 1px 4px rgba(0,0,0,.06);margin-bottom:14px}
+.errs h3{font-family:'Bricolage Grotesque',sans-serif;font-size:14px;font-weight:700;margin-bottom:12px;color:var(--rouge)}
+.te{display:flex;align-items:center;justify-content:space-between;padding:12px 0;cursor:pointer;font-family:'Bricolage Grotesque',sans-serif;font-size:13px;font-weight:600;border:none;background:none;width:100%;color:var(--noir)}
+.ta{transition:transform .3s;font-size:16px}.ta.op{transform:rotate(180deg)}
+.el{display:none}.el.op{display:block}
+.ec{padding:14px 0;border-bottom:1px solid var(--gris)}.ec:last-child{border:none}
+.eqt{font-family:'Bricolage Grotesque',sans-serif;font-size:13px;font-weight:600;margin-bottom:6px;line-height:1.4}
+.eth{font-size:10px;font-family:'Bricolage Grotesque',sans-serif;font-weight:600;margin-bottom:5px;opacity:.6;text-transform:uppercase}
+.ey{font-size:12px;color:var(--rouge);margin-bottom:3px;display:flex;align-items:flex-start;gap:5px}
+.ecr{font-size:12px;color:var(--vert);margin-bottom:5px;display:flex;align-items:flex-start;gap:5px}
+.eex{font-size:12px;color:var(--gtx);line-height:1.4;padding:7px 9px;background:var(--gcl);border-radius:8px}
+
+@media(min-width:640px){.hd{padding:22px 32px 18px}.ss,.qs,.rs{padding-left:32px;padding-right:32px}.qt{font-size:18px}}
+</style>
+</head>
+<body>
+
+<div class="hd">
+  <div class="hd-top">
+    <div class="tri"></div>
+    <div><h1>Examen Civique — Entraînement</h1><div class="sub">Mention Naturalisation · 40 questions / session</div></div>
+    <div class="tm" id="timer">⏱ 45:00</div>
+  </div>
+  <div class="pb-c"><div class="pb" id="pBar"></div></div>
+  <div class="pi"><span id="pTxt">Question 0/40</span><span id="sTxt">Score: 0</span></div>
+</div>
+
+<!-- ===== START ===== -->
+<div class="sc on" id="S0"><div class="ss">
+  <div class="cd">
+    <div class="bg">Naturalisation 🇫🇷</div>
+    <h2>Préparez l'examen civique</h2>
+    <p>244+ questions tirées au sort, réponses mélangées à chaque session. Chaque examen blanc est différent.</p>
+    <div class="ig">
+      <div class="ii"><div class="n">40</div><div class="l">Questions / session</div></div>
+      <div class="ii"><div class="n">45</div><div class="l">Minutes</div></div>
+      <div class="ii"><div class="n">80%</div><div class="l">Seuil de réussite</div></div>
+      <div class="ii"><div class="n">244+</div><div class="l">Questions en banque</div></div>
+    </div>
+    <p style="font-size:12px;font-weight:600;margin-bottom:6px">5 thématiques :</p>
+    <ul class="tl">
+      <li><span class="td" style="background:#000091"></span>Principes et valeurs de la République</li>
+      <li><span class="td" style="background:#A558C7"></span>Système institutionnel et politique</li>
+      <li><span class="td" style="background:#E1000F"></span>Droits et devoirs</li>
+      <li><span class="td" style="background:#008941"></span>Histoire, géographie et culture</li>
+      <li><span class="td" style="background:#C9A84C"></span>Vivre dans la société française</li>
+    </ul>
+  </div>
+  <button class="bp" onclick="go(0)">Commencer l'examen blanc</button>
+  <button class="bs" onclick="go(1)">Mode révision (sans chrono)</button>
+
+  <div class="share-box">
+    <h3>📱 Utiliser sur un autre téléphone</h3>
+    <p>Ce fichier est 100% autonome (53 Ko). Téléchargez-le puis partagez-le comme vous voulez :</p>
+    <div class="share-methods">
+      <div class="share-method">
+        <strong>① Bouton « Partager » (mobile)</strong>
+        Sur mobile, le bouton envoie directement le fichier par WhatsApp, Telegram, AirDrop, email…
+      </div>
+      <div class="share-method">
+        <strong>② Bouton « Télécharger » (PC/mobile)</strong>
+        Sauvegarde le fichier HTML. Envoyez-le ensuite en pièce jointe par email ou messagerie.
+      </div>
+      <div class="share-method">
+        <strong>③ Créer un lien web (facultatif)</strong>
+        Uploadez le fichier sur <a href="https://tiiny.host" target="_blank">tiiny.host</a> (gratuit) → un lien cliquable à partager.
+      </div>
+    </div>
+    <div class="share-btns">
+      <button class="sbtn" onclick="downloadHTML()">💾 Télécharger le fichier</button>
+      <button class="sbtn" onclick="shareFile()">📤 Partager</button>
+    </div>
+  </div>
+
+  <div class="disc">⚠️ <strong>Entraînement non officiel.</strong> Questions inspirées de la liste officielle sur <a href="https://formation-civique.interieur.gouv.fr" target="_blank">formation-civique.interieur.gouv.fr</a>. Les mises en situation du vrai examen ne sont pas publiées — celles incluses ici sont des exemples plausibles.</div>
+</div></div>
+
+<!-- ===== QUIZ ===== -->
+<div class="sc" id="S1"><div class="qs"><div id="qBox"></div></div>
+<div class="nbc" id="nbc"><button class="bp" id="nBtn" onclick="nxt()">→</button></div></div>
+
+<!-- ===== RESULTS ===== -->
+<div class="sc" id="S2"><div class="rs" id="rBox"></div></div>
+
+<div class="toast" id="toast">✓ Copié !</div>
+
+<script>
+const TH={
+  principes:{n:"Principes et valeurs de la République",c:"#000091"},
+  institutions:{n:"Système institutionnel et politique",c:"#A558C7"},
+  droits:{n:"Droits et devoirs",c:"#E1000F"},
+  histoire:{n:"Histoire, géographie et culture",c:"#008941"},
+  societe:{n:"Vivre dans la société française",c:"#C9A84C"}
+};
+
+/* ========== QUESTION BANK (244+) ========== */
+const B=[
+{t:"principes",q:"Complétez les paroles de la Marseillaise \"Allons enfants de la patrie...\"",o:["Le jour de gloire est arrivé", "Le temps de la liberté est venu", "Unis sous le même drapeau", "La victoire est assurée"],a:0,e:"Début de la 1ʳᵉ strophe de la Marseillaise.
+
+📌 À retenir : cette notion relève des principes républicains (liberté, égalité, fraternité, laïcité). Les libertés existent mais sont encadrées par la loi et par le respect d’autrui."},
+{t:"principes",q:"Dans le cadre d'un entretien d'embauche, que peut-on demander au candidat ?",o:["Un principe républicain (liberté, égalité, fraternité, laïcité)", "Une règle religieuse", "Une règle privée", "Un privilège"],a:0,e:"Réponse non officielle : principe de la République.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : cette notion relève des principes républicains (liberté, égalité, fraternité, laïcité). Les libertés existent mais sont encadrées par la loi et par le respect d’autrui."},
+{t:"principes",q:"Déclarer ses revenus aux services fiscaux est :",o:["Un principe républicain (liberté, égalité, fraternité, laïcité)", "Une règle religieuse", "Une règle privée", "Un privilège"],a:0,e:"Réponse non officielle : principe de la République.
+
+✅ Astuce : payer l’impôt est un devoir civique qui finance les services publics et la solidarité nationale.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : cette notion relève des principes républicains (liberté, égalité, fraternité, laïcité). Les libertés existent mais sont encadrées par la loi et par le respect d’autrui."},
+{t:"principes",q:"En France, les impôts permettent de financer les dépenses publiques. Quelle proposition est correcte ?",o:["Un principe républicain (liberté, égalité, fraternité, laïcité)", "Une règle religieuse", "Une règle privée", "Un privilège"],a:0,e:"Réponse non officielle : principe de la République.
+
+✅ Astuce : payer l’impôt est un devoir civique qui finance les services publics et la solidarité nationale.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : cette notion relève des principes républicains (liberté, égalité, fraternité, laïcité). Les libertés existent mais sont encadrées par la loi et par le respect d’autrui."},
+{t:"principes",q:"La liberté d'association est :",o:["Un principe républicain (liberté, égalité, fraternité, laïcité)", "Une règle religieuse", "Une règle privée", "Un privilège"],a:0,e:"Réponse non officielle : principe de la République.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : cette notion relève des principes républicains (liberté, égalité, fraternité, laïcité). Les libertés existent mais sont encadrées par la loi et par le respect d’autrui."},
+{t:"principes",q:"La liberté d'expression sur les réseaux sociaux en France est :",o:["Un principe républicain (liberté, égalité, fraternité, laïcité)", "Une règle religieuse", "Une règle privée", "Un privilège"],a:0,e:"Réponse non officielle : principe de la République.
+
+✅ Astuce : la liberté d’expression n’est jamais ‘totale’. Elle s’arrête aux limites prévues par la loi (diffamation, injure, haine, menaces…).
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : cette notion relève des principes républicains (liberté, égalité, fraternité, laïcité). Les libertés existent mais sont encadrées par la loi et par le respect d’autrui."},
+{t:"principes",q:"Lequel de ces prénoms évoque un symbole de la République ?",o:["Un principe républicain (liberté, égalité, fraternité, laïcité)", "Une règle religieuse", "Une règle privée", "Un privilège"],a:0,e:"Réponse non officielle : principe de la République.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : cette notion relève des principes républicains (liberté, égalité, fraternité, laïcité). Les libertés existent mais sont encadrées par la loi et par le respect d’autrui."},
+{t:"principes",q:"Lequel de ces symboles représente la République française ?",o:["Un principe républicain (liberté, égalité, fraternité, laïcité)", "Une règle religieuse", "Une règle privée", "Un privilège"],a:0,e:"Réponse non officielle : principe de la République.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : cette notion relève des principes républicains (liberté, égalité, fraternité, laïcité). Les libertés existent mais sont encadrées par la loi et par le respect d’autrui."},
+{t:"principes",q:"Où peut-on voir la devise de la République ?",o:["Sur les bâtiments publics (mairies, écoles...)", "Uniquement sur les billets de banque", "Sur les voitures de police", "Nulle part, elle n'est pas affichée"],a:0,e:"La devise « Liberté, Égalité, Fraternité » est inscrite sur les façades des bâtiments publics."},
+{t:"principes",q:"Lesquels sont des symboles officiels de la République française ?",o:["Un principe républicain (liberté, égalité, fraternité, laïcité)", "Une règle religieuse", "Une règle privée", "Un privilège"],a:0,e:"Réponse non officielle : principe de la République.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : cette notion relève des principes républicains (liberté, égalité, fraternité, laïcité). Les libertés existent mais sont encadrées par la loi et par le respect d’autrui."},
+{t:"principes",q:"Peut-on brûler publiquement un drapeau français ?",o:["Un principe républicain (liberté, égalité, fraternité, laïcité)", "Une règle religieuse", "Une règle privée", "Un privilège"],a:0,e:"Réponse non officielle : principe de la République.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : cette notion relève des principes républicains (liberté, égalité, fraternité, laïcité). Les libertés existent mais sont encadrées par la loi et par le respect d’autrui."},
+{t:"principes",q:"Quand la sécurité sociale a-t-elle été établie en France ?",o:["1945", "1936", "1958", "1981"],a:0,e:"Création de la Sécurité sociale en 1945.
+
+📌 À retenir : cette notion relève des principes républicains (liberté, égalité, fraternité, laïcité). Les libertés existent mais sont encadrées par la loi et par le respect d’autrui."},
+{t:"principes",q:"Que commémore la fête nationale ?",o:["La prise de la Bastille (1789) et la Fête de la Fédération (1790)", "La victoire de 1945", "La création de l’ONU", "La naissance de l’euro"],a:0,e:"Le 14 juillet commémore 1789 et 1790.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : cette notion relève des principes républicains (liberté, égalité, fraternité, laïcité). Les libertés existent mais sont encadrées par la loi et par le respect d’autrui."},
+{t:"principes",q:"Que porte Marianne sur la tête ?",o:["Un principe républicain (liberté, égalité, fraternité, laïcité)", "Une règle religieuse", "Une règle privée", "Un privilège"],a:0,e:"Réponse non officielle : principe de la République.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : cette notion relève des principes républicains (liberté, égalité, fraternité, laïcité). Les libertés existent mais sont encadrées par la loi et par le respect d’autrui."},
+{t:"principes",q:"Quel symbole de la République peut-on voir sur les maillots de l'équipe de France de football ?",o:["Un principe républicain (liberté, égalité, fraternité, laïcité)", "Une règle religieuse", "Une règle privée", "Un privilège"],a:0,e:"Réponse non officielle : principe de la République.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : cette notion relève des principes républicains (liberté, égalité, fraternité, laïcité). Les libertés existent mais sont encadrées par la loi et par le respect d’autrui."},
+{t:"principes",q:"Quelle est la devise de la République française ?",o:["Liberté, Égalité, Fraternité", "Unité, Force, Progrès", "Paix, Travail, Patrie", "Honneur, Patrie, Valeur"],a:0,e:"La devise « Liberté, Égalité, Fraternité » figure à l'article 2 de la Constitution."},
+{t:"principes",q:"Qu'est-ce que la liberté d'association ?",o:["Un principe républicain (liberté, égalité, fraternité, laïcité)", "Une règle religieuse", "Une règle privée", "Un privilège"],a:0,e:"Réponse non officielle : principe de la République.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : cette notion relève des principes républicains (liberté, égalité, fraternité, laïcité). Les libertés existent mais sont encadrées par la loi et par le respect d’autrui."},
+{t:"principes",q:"Qu'est-ce qu'une liberté ?",o:["Un principe républicain (liberté, égalité, fraternité, laïcité)", "Une règle religieuse", "Une règle privée", "Un privilège"],a:0,e:"Réponse non officielle : principe de la République.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : cette notion relève des principes républicains (liberté, égalité, fraternité, laïcité). Les libertés existent mais sont encadrées par la loi et par le respect d’autrui."},
+{t:"principes",q:"Sur quel document peut-on voir Marianne ?",o:["Les timbres-poste", "Le passeport uniquement", "Le permis de conduire", "La carte Vitale"],a:0,e:"Marianne figure sur les timbres-poste et les pièces de monnaie françaises, ainsi que dans les mairies."},
+{t:"principes",q:"Une des valeurs de la devise républicaine est l'Égalité. Qu'est-ce que cela signifie ?",o:["Un principe républicain (liberté, égalité, fraternité, laïcité)", "Une règle religieuse", "Une règle privée", "Un privilège"],a:0,e:"Réponse non officielle : principe de la République.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : cette notion relève des principes républicains (liberté, égalité, fraternité, laïcité). Les libertés existent mais sont encadrées par la loi et par le respect d’autrui."},
+{t:"principes",q:"Une personne peut-elle changer librement de religion en France ?",o:["Un principe républicain (liberté, égalité, fraternité, laïcité)", "Une règle religieuse", "Une règle privée", "Un privilège"],a:0,e:"Réponse non officielle : principe de la République.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : cette notion relève des principes républicains (liberté, égalité, fraternité, laïcité). Les libertés existent mais sont encadrées par la loi et par le respect d’autrui."},
+{t:"principes",q:"Que peut faire un usager du service public dans une mairie ?",o:["Porter des signes religieux car il n'est pas soumis à la neutralité", "Exiger que l'agent retire le sien", "Refuser d'être servi par une femme", "Imposer sa religion à l'agent"],a:0,e:"Les usagers du service public ne sont pas soumis à l'obligation de neutralité, contrairement aux agents."},
+{t:"principes",q:"En France, il est possible pour l'État de financer :",o:["Un principe républicain (liberté, égalité, fraternité, laïcité)", "Une règle religieuse", "Une règle privée", "Un privilège"],a:0,e:"Réponse non officielle : principe de la République.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : cette notion relève des principes républicains (liberté, égalité, fraternité, laïcité). Les libertés existent mais sont encadrées par la loi et par le respect d’autrui."},
+{t:"principes",q:"En quelle année la loi de séparation des Églises et de l'État a-t-elle été votée ?",o:["1905", "1789", "1848", "1946"],a:0,e:"La loi du 9 décembre 1905 est un pilier de la laïcité.
+
+✅ Astuce : la laïcité = neutralité de l’État + liberté de conscience. L’État ne finance pas un culte, mais garantit le libre exercice des religions dans le respect de l’ordre public.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : cette notion relève des principes républicains (liberté, égalité, fraternité, laïcité). Les libertés existent mais sont encadrées par la loi et par le respect d’autrui."},
+{t:"principes",q:"Que dit la loi de 1905 ?",o:["1905", "1789", "1946", "1958"],a:0,e:"La loi de séparation des Églises et de l’État date de 1905.
+
+✅ Astuce : la laïcité = neutralité de l’État + liberté de conscience. L’État ne finance pas un culte, mais garantit le libre exercice des religions dans le respect de l’ordre public.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : cette notion relève des principes républicains (liberté, égalité, fraternité, laïcité). Les libertés existent mais sont encadrées par la loi et par le respect d’autrui."},
+{t:"principes",q:"Que garantit le principe de laïcité ?",o:["Un principe républicain (liberté, égalité, fraternité, laïcité)", "Une règle religieuse", "Une règle privée", "Un privilège"],a:0,e:"Réponse non officielle : principe de la République.
+
+✅ Astuce : la laïcité = neutralité de l’État + liberté de conscience. L’État ne finance pas un culte, mais garantit le libre exercice des religions dans le respect de l’ordre public.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : cette notion relève des principes républicains (liberté, égalité, fraternité, laïcité). Les libertés existent mais sont encadrées par la loi et par le respect d’autrui."},
+{t:"principes",q:"Quel jour célèbre-t-on officiellement la laïcité en France ?",o:["Un principe républicain (liberté, égalité, fraternité, laïcité)", "Une règle religieuse", "Une règle privée", "Un privilège"],a:0,e:"Réponse non officielle : principe de la République.
+
+✅ Astuce : la laïcité = neutralité de l’État + liberté de conscience. L’État ne finance pas un culte, mais garantit le libre exercice des religions dans le respect de l’ordre public.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : cette notion relève des principes républicains (liberté, égalité, fraternité, laïcité). Les libertés existent mais sont encadrées par la loi et par le respect d’autrui."},
+{t:"principes",q:"Quel symbole religieux peut être porté dans une école publique dans le respect de la laïcité ?",o:["Un principe républicain (liberté, égalité, fraternité, laïcité)", "Une règle religieuse", "Une règle privée", "Un privilège"],a:0,e:"Réponse non officielle : principe de la République.
+
+✅ Astuce : la laïcité = neutralité de l’État + liberté de conscience. L’État ne finance pas un culte, mais garantit le libre exercice des religions dans le respect de l’ordre public.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+✅ Astuce : l’instruction est obligatoire de 3 à 16 ans. L’école publique est laïque ; les règles s’appliquent à tous.
+
+📌 À retenir : cette notion relève des principes républicains (liberté, égalité, fraternité, laïcité). Les libertés existent mais sont encadrées par la loi et par le respect d’autrui."},
+{t:"principes",q:"Quel terme désigne précisément la haine ou les préjugés contre les Juifs ?",o:["Un principe républicain (liberté, égalité, fraternité, laïcité)", "Une règle religieuse", "Une règle privée", "Un privilège"],a:0,e:"Réponse non officielle : principe de la République.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : cette notion relève des principes républicains (liberté, égalité, fraternité, laïcité). Les libertés existent mais sont encadrées par la loi et par le respect d’autrui."},
+{t:"principes",q:"Quel texte est considéré comme le texte fondateur de la laïcité ?",o:["Un principe républicain (liberté, égalité, fraternité, laïcité)", "Une règle religieuse", "Une règle privée", "Un privilège"],a:0,e:"Réponse non officielle : principe de la République.
+
+✅ Astuce : la laïcité = neutralité de l’État + liberté de conscience. L’État ne finance pas un culte, mais garantit le libre exercice des religions dans le respect de l’ordre public.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : cette notion relève des principes républicains (liberté, égalité, fraternité, laïcité). Les libertés existent mais sont encadrées par la loi et par le respect d’autrui."},
+{t:"principes",q:"Quelle institution française doit rester neutre en matière de religion ?",o:["Un principe républicain (liberté, égalité, fraternité, laïcité)", "Une règle religieuse", "Une règle privée", "Un privilège"],a:0,e:"Réponse non officielle : principe de la République.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : cette notion relève des principes républicains (liberté, égalité, fraternité, laïcité). Les libertés existent mais sont encadrées par la loi et par le respect d’autrui."},
+{t:"principes",q:"Qu'est-ce que la laïcité ?",o:["La séparation des religions et de l'État, garantissant la liberté de conscience", "L'interdiction de pratiquer une religion", "L'obligation d'être athée", "Une religion d'État"],a:0,e:"La laïcité sépare les institutions de l'État des organisations religieuses et garantit la liberté de conscience."},
+{t:"principes",q:"À l'école, la charte de la laïcité permet de :",o:["Un principe républicain (liberté, égalité, fraternité, laïcité)", "Une règle religieuse", "Une règle privée", "Un privilège"],a:0,e:"Réponse non officielle : principe de la République.
+
+✅ Astuce : la laïcité = neutralité de l’État + liberté de conscience. L’État ne finance pas un culte, mais garantit le libre exercice des religions dans le respect de l’ordre public.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+✅ Astuce : l’instruction est obligatoire de 3 à 16 ans. L’école publique est laïque ; les règles s’appliquent à tous.
+
+📌 À retenir : cette notion relève des principes républicains (liberté, égalité, fraternité, laïcité). Les libertés existent mais sont encadrées par la loi et par le respect d’autrui."},
+{t:"principes",q:"Qui doit respecter et veiller à la neutralité religieuse dans les services publics ?",o:["Un principe républicain (liberté, égalité, fraternité, laïcité)", "Une règle religieuse", "Une règle privée", "Un privilège"],a:0,e:"Réponse non officielle : principe de la République.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : cette notion relève des principes républicains (liberté, égalité, fraternité, laïcité). Les libertés existent mais sont encadrées par la loi et par le respect d’autrui."},
+{t:"principes",q:"Une personne déclare ne croire en aucun dieu. On peut dire :",o:["Un principe républicain (liberté, égalité, fraternité, laïcité)", "Une règle religieuse", "Une règle privée", "Un privilège"],a:0,e:"Réponse non officielle : principe de la République.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : cette notion relève des principes républicains (liberté, égalité, fraternité, laïcité). Les libertés existent mais sont encadrées par la loi et par le respect d’autrui."},
+{t:"institutions",q:"Comment est désigné le Premier ministre ?",o:["Le Président de la République", "Le peuple", "L’Assemblée nationale", "Le Sénat"],a:0,e:"Le Premier ministre est nommé par le Président.
+
+✅ Astuce : le Président est chef de l’État, le Premier ministre dirige l’action du Gouvernement. Ils n’ont pas exactement les mêmes rôles.
+
+📌 À retenir : en France (Ve République), les rôles sont séparés : le Gouvernement met en œuvre la politique, le Parlement vote la loi, la Justice sanctionne. La séparation des pouvoirs protège les libertés."},
+{t:"institutions",q:"Qui peut se présenter aux élections présidentielles ?",o:["Selon la Constitution et les lois de la République", "Selon la religion", "Selon une coutume locale", "Selon l’Union européenne uniquement"],a:0,e:"Réponse non officielle : principe général des institutions françaises.
+
+✅ Astuce : le Président est chef de l’État, le Premier ministre dirige l’action du Gouvernement. Ils n’ont pas exactement les mêmes rôles.
+
+📌 À retenir : en France (Ve République), les rôles sont séparés : le Gouvernement met en œuvre la politique, le Parlement vote la loi, la Justice sanctionne. La séparation des pouvoirs protège les libertés."},
+{t:"institutions",q:"À qui appartient la souveraineté nationale ?",o:["Au peuple", "Au Président", "Au Parlement", "À l’Union européenne"],a:0,e:"La souveraineté nationale appartient au peuple.
+
+📌 À retenir : en France (Ve République), les rôles sont séparés : le Gouvernement met en œuvre la politique, le Parlement vote la loi, la Justice sanctionne. La séparation des pouvoirs protège les libertés."},
+{t:"institutions",q:"Qui est élu lors des élections municipales ?",o:["Selon la Constitution et les lois de la République", "Selon la religion", "Selon une coutume locale", "Selon l’Union européenne uniquement"],a:0,e:"Réponse non officielle : principe général des institutions françaises.
+
+📌 À retenir : en France (Ve République), les rôles sont séparés : le Gouvernement met en œuvre la politique, le Parlement vote la loi, la Justice sanctionne. La séparation des pouvoirs protège les libertés."},
+{t:"institutions",q:"L'inscription sur les listes électorales est :",o:["Selon la Constitution et les lois de la République", "Selon la religion", "Selon une coutume locale", "Selon l’Union européenne uniquement"],a:0,e:"Réponse non officielle : principe général des institutions françaises.
+
+📌 À retenir : en France (Ve République), les rôles sont séparés : le Gouvernement met en œuvre la politique, le Parlement vote la loi, la Justice sanctionne. La séparation des pouvoirs protège les libertés."},
+{t:"institutions",q:"Quelle condition est nécessaire pour voter aux élections présidentielles ?",o:["Selon la Constitution et les lois de la République", "Selon la religion", "Selon une coutume locale", "Selon l’Union européenne uniquement"],a:0,e:"Réponse non officielle : principe général des institutions françaises.
+
+✅ Astuce : le Président est chef de l’État, le Premier ministre dirige l’action du Gouvernement. Ils n’ont pas exactement les mêmes rôles.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : en France (Ve République), les rôles sont séparés : le Gouvernement met en œuvre la politique, le Parlement vote la loi, la Justice sanctionne. La séparation des pouvoirs protège les libertés."},
+{t:"institutions",q:"Quelle condition faut-il remplir pour être candidat aux élections municipales ?",o:["Selon la Constitution et les lois de la République", "Selon la religion", "Selon une coutume locale", "Selon l’Union européenne uniquement"],a:0,e:"Réponse non officielle : principe général des institutions françaises.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : en France (Ve République), les rôles sont séparés : le Gouvernement met en œuvre la politique, le Parlement vote la loi, la Justice sanctionne. La séparation des pouvoirs protège les libertés."},
+{t:"institutions",q:"Parmi ces autorités, laquelle est élue ?",o:["Selon la Constitution et les lois de la République", "Selon la religion", "Selon une coutume locale", "Selon l’Union européenne uniquement"],a:0,e:"Réponse non officielle : principe général des institutions françaises.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : en France (Ve République), les rôles sont séparés : le Gouvernement met en œuvre la politique, le Parlement vote la loi, la Justice sanctionne. La séparation des pouvoirs protège les libertés."},
+{t:"institutions",q:"Quelles sont les fonctions du maire ?",o:["Selon la Constitution et les lois de la République", "Selon la religion", "Selon une coutume locale", "Selon l’Union européenne uniquement"],a:0,e:"Réponse non officielle : principe général des institutions françaises.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : en France (Ve République), les rôles sont séparés : le Gouvernement met en œuvre la politique, le Parlement vote la loi, la Justice sanctionne. La séparation des pouvoirs protège les libertés."},
+{t:"institutions",q:"Une personne, n'ayant pas d'accès à internet, veut s'inscrire sur les listes électorales pour pouvoir voter aux prochaines élections politiques. Où peut-elle s'inscrire ?",o:["Selon la Constitution et les lois de la République", "Selon la religion", "Selon une coutume locale", "Selon l’Union européenne uniquement"],a:0,e:"Réponse non officielle : principe général des institutions françaises.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : en France (Ve République), les rôles sont séparés : le Gouvernement met en œuvre la politique, le Parlement vote la loi, la Justice sanctionne. La séparation des pouvoirs protège les libertés."},
+{t:"institutions",q:"À quel âge peut-on devenir électeur ?",o:["Selon la Constitution et les lois de la République", "Selon la religion", "Selon une coutume locale", "Selon l’Union européenne uniquement"],a:0,e:"Réponse non officielle : principe général des institutions françaises.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : en France (Ve République), les rôles sont séparés : le Gouvernement met en œuvre la politique, le Parlement vote la loi, la Justice sanctionne. La séparation des pouvoirs protège les libertés."},
+{t:"institutions",q:"En France, est-ce obligatoire de voter ?",o:["Selon la Constitution et les lois de la République", "Selon la religion", "Selon une coutume locale", "Selon l’Union européenne uniquement"],a:0,e:"Réponse non officielle : principe général des institutions françaises.
+
+📌 À retenir : en France (Ve République), les rôles sont séparés : le Gouvernement met en œuvre la politique, le Parlement vote la loi, la Justice sanctionne. La séparation des pouvoirs protège les libertés."},
+{t:"institutions",q:"A-t-on le droit de ne pas respecter une loi ?",o:["Selon la Constitution et les lois de la République", "Selon la religion", "Selon une coutume locale", "Selon l’Union européenne uniquement"],a:0,e:"Réponse non officielle : principe général des institutions françaises.
+
+📌 À retenir : en France (Ve République), les rôles sont séparés : le Gouvernement met en œuvre la politique, le Parlement vote la loi, la Justice sanctionne. La séparation des pouvoirs protège les libertés."},
+{t:"institutions",q:"Comment sont désignés les députés ?",o:["Selon la Constitution et les lois de la République", "Selon la religion", "Selon une coutume locale", "Selon l’Union européenne uniquement"],a:0,e:"Réponse non officielle : principe général des institutions françaises.
+
+✅ Astuce : ‘voter la loi’ = Parlement. Le Gouvernement prépare et applique, mais ne vote pas la loi.
+
+📌 À retenir : en France (Ve République), les rôles sont séparés : le Gouvernement met en œuvre la politique, le Parlement vote la loi, la Justice sanctionne. La séparation des pouvoirs protège les libertés."},
+{t:"institutions",q:"Qui vote les lois ?",o:["Le Parlement", "Le Président", "Le Gouvernement", "Le Conseil constitutionnel"],a:0,e:"Le Parlement vote les lois.
+
+✅ Astuce : ‘voter la loi’ = Parlement. Le Gouvernement prépare et applique, mais ne vote pas la loi.
+
+📌 À retenir : en France (Ve République), les rôles sont séparés : le Gouvernement met en œuvre la politique, le Parlement vote la loi, la Justice sanctionne. La séparation des pouvoirs protège les libertés."},
+{t:"institutions",q:"La séparation des pouvoirs est un principe fondamental. Quels sont les trois pouvoirs concernés ?",o:["Exécutif, législatif, judiciaire", "Local, national, européen", "Administratif, fiscal, social", "Religieux, militaire, civil"],a:0,e:"Principe de séparation des pouvoirs.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : en France (Ve République), les rôles sont séparés : le Gouvernement met en œuvre la politique, le Parlement vote la loi, la Justice sanctionne. La séparation des pouvoirs protège les libertés."},
+{t:"institutions",q:"Qu'est-ce que l'État de droit ?",o:["Un État où les lois s'appliquent à tous, y compris aux gouvernants", "Un État où le président a tous les pouvoirs", "Un État sans tribunaux", "Un État sans Constitution"],a:0,e:"L'État de droit signifie que personne n'est au-dessus de la loi.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : en France (Ve République), les rôles sont séparés : le Gouvernement met en œuvre la politique, le Parlement vote la loi, la Justice sanctionne. La séparation des pouvoirs protège les libertés."},
+{t:"institutions",q:"Quelles sont les durées du mandat du conseil municipal et du maire ?",o:["Selon la Constitution et les lois de la République", "Selon la religion", "Selon une coutume locale", "Selon l’Union européenne uniquement"],a:0,e:"Réponse non officielle : principe général des institutions françaises.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : en France (Ve République), les rôles sont séparés : le Gouvernement met en œuvre la politique, le Parlement vote la loi, la Justice sanctionne. La séparation des pouvoirs protège les libertés."},
+{t:"institutions",q:"Qui est élu lors des élections législatives ?",o:["Selon la Constitution et les lois de la République", "Selon la religion", "Selon une coutume locale", "Selon l’Union européenne uniquement"],a:0,e:"Réponse non officielle : principe général des institutions françaises.
+
+📌 À retenir : en France (Ve République), les rôles sont séparés : le Gouvernement met en œuvre la politique, le Parlement vote la loi, la Justice sanctionne. La séparation des pouvoirs protège les libertés."},
+{t:"institutions",q:"Quelle est la durée du mandat du Président de la République française ?",o:["5 ans", "4 ans", "6 ans", "7 ans"],a:0,e:"Mandat présidentiel : 5 ans (quinquennat).
+
+✅ Astuce : le Président est chef de l’État, le Premier ministre dirige l’action du Gouvernement. Ils n’ont pas exactement les mêmes rôles.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : en France (Ve République), les rôles sont séparés : le Gouvernement met en œuvre la politique, le Parlement vote la loi, la Justice sanctionne. La séparation des pouvoirs protège les libertés."},
+{t:"institutions",q:"Quelle est la durée du mandat des députés ?",o:["5 ans", "4 ans", "6 ans", "7 ans"],a:0,e:"Mandat des députés : 5 ans.
+
+✅ Astuce : ‘voter la loi’ = Parlement. Le Gouvernement prépare et applique, mais ne vote pas la loi.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : en France (Ve République), les rôles sont séparés : le Gouvernement met en œuvre la politique, le Parlement vote la loi, la Justice sanctionne. La séparation des pouvoirs protège les libertés."},
+{t:"institutions",q:"Quelle est la durée du mandat des sénateurs ?",o:["6 ans", "5 ans", "7 ans", "9 ans"],a:0,e:"Mandat des sénateurs : 6 ans.
+
+✅ Astuce : ‘voter la loi’ = Parlement. Le Gouvernement prépare et applique, mais ne vote pas la loi.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : en France (Ve République), les rôles sont séparés : le Gouvernement met en œuvre la politique, le Parlement vote la loi, la Justice sanctionne. La séparation des pouvoirs protège les libertés."},
+{t:"institutions",q:"Qui dirige l'action du gouvernement ?",o:["Le Premier ministre", "Le président de la République", "Le président de l'Assemblée", "Le Défenseur des droits"],a:0,e:"Article 21 : le Premier ministre dirige l'action du Gouvernement.
+
+✅ Astuce : le Président est chef de l’État, le Premier ministre dirige l’action du Gouvernement. Ils n’ont pas exactement les mêmes rôles.
+
+📌 À retenir : en France (Ve République), les rôles sont séparés : le Gouvernement met en œuvre la politique, le Parlement vote la loi, la Justice sanctionne. La séparation des pouvoirs protège les libertés."},
+{t:"institutions",q:"En France, est-ce possible d'adhérer à un parti politique ?",o:["Selon la Constitution et les lois de la République", "Selon la religion", "Selon une coutume locale", "Selon l’Union européenne uniquement"],a:0,e:"Réponse non officielle : principe général des institutions françaises.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : en France (Ve République), les rôles sont séparés : le Gouvernement met en œuvre la politique, le Parlement vote la loi, la Justice sanctionne. La séparation des pouvoirs protège les libertés."},
+{t:"institutions",q:"Qui sanctionne l'auteur d'un vol ?",o:["L'autorité judiciaire (un juge)", "Le président", "Le maire", "La police"],a:0,e:"C'est le pouvoir judiciaire (les juges) qui rend la justice et prononce les sanctions."},
+{t:"institutions",q:"Qui gère les collèges publics ?",o:["Selon la Constitution et les lois de la République", "Selon la religion", "Selon une coutume locale", "Selon l’Union européenne uniquement"],a:0,e:"Réponse non officielle : principe général des institutions françaises.
+
+✅ Astuce : l’instruction est obligatoire de 3 à 16 ans. L’école publique est laïque ; les règles s’appliquent à tous.
+
+📌 À retenir : en France (Ve République), les rôles sont séparés : le Gouvernement met en œuvre la politique, le Parlement vote la loi, la Justice sanctionne. La séparation des pouvoirs protège les libertés."},
+{t:"institutions",q:"Qui gère les écoles primaires et maternelles publiques ?",o:["Selon la Constitution et les lois de la République", "Selon la religion", "Selon une coutume locale", "Selon l’Union européenne uniquement"],a:0,e:"Réponse non officielle : principe général des institutions françaises.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+✅ Astuce : l’instruction est obligatoire de 3 à 16 ans. L’école publique est laïque ; les règles s’appliquent à tous.
+
+📌 À retenir : en France (Ve République), les rôles sont séparés : le Gouvernement met en œuvre la politique, le Parlement vote la loi, la Justice sanctionne. La séparation des pouvoirs protège les libertés."},
+{t:"institutions",q:"Comment sont désignés les maires ?",o:["Selon la Constitution et les lois de la République", "Selon la religion", "Selon une coutume locale", "Selon l’Union européenne uniquement"],a:0,e:"Réponse non officielle : principe général des institutions françaises.
+
+📌 À retenir : en France (Ve République), les rôles sont séparés : le Gouvernement met en œuvre la politique, le Parlement vote la loi, la Justice sanctionne. La séparation des pouvoirs protège les libertés."},
+{t:"institutions",q:"Quelle collectivité territoriale est responsable des transports régionaux ?",o:["Selon la Constitution et les lois de la République", "Selon la religion", "Selon une coutume locale", "Selon l’Union européenne uniquement"],a:0,e:"Réponse non officielle : principe général des institutions françaises.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : en France (Ve République), les rôles sont séparés : le Gouvernement met en œuvre la politique, le Parlement vote la loi, la Justice sanctionne. La séparation des pouvoirs protège les libertés."},
+{t:"institutions",q:"Quelle est l'une des voies possibles pour modifier la Constitution ?",o:["Selon la Constitution et les lois de la République", "Selon la religion", "Selon une coutume locale", "Selon l’Union européenne uniquement"],a:0,e:"Réponse non officielle : principe général des institutions françaises.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : en France (Ve République), les rôles sont séparés : le Gouvernement met en œuvre la politique, le Parlement vote la loi, la Justice sanctionne. La séparation des pouvoirs protège les libertés."},
+{t:"institutions",q:"Qui assure l'intérim du président de la République en cas de décès ?",o:["Selon la Constitution et les lois de la République", "Selon la religion", "Selon une coutume locale", "Selon l’Union européenne uniquement"],a:0,e:"Réponse non officielle : principe général des institutions françaises.
+
+✅ Astuce : le Président est chef de l’État, le Premier ministre dirige l’action du Gouvernement. Ils n’ont pas exactement les mêmes rôles.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : en France (Ve République), les rôles sont séparés : le Gouvernement met en œuvre la politique, le Parlement vote la loi, la Justice sanctionne. La séparation des pouvoirs protège les libertés."},
+{t:"institutions",q:"Quel est le rôle du Conseil constitutionnel ?",o:["Selon la Constitution et les lois de la République", "Selon la religion", "Selon une coutume locale", "Selon l’Union européenne uniquement"],a:0,e:"Réponse non officielle : principe général des institutions françaises.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : en France (Ve République), les rôles sont séparés : le Gouvernement met en œuvre la politique, le Parlement vote la loi, la Justice sanctionne. La séparation des pouvoirs protège les libertés."},
+{t:"institutions",q:"Quelle condition est obligatoire pour se présenter à l'élection présidentielle ?",o:["Selon la Constitution et les lois de la République", "Selon la religion", "Selon une coutume locale", "Selon l’Union européenne uniquement"],a:0,e:"Réponse non officielle : principe général des institutions françaises.
+
+✅ Astuce : le Président est chef de l’État, le Premier ministre dirige l’action du Gouvernement. Ils n’ont pas exactement les mêmes rôles.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : en France (Ve République), les rôles sont séparés : le Gouvernement met en œuvre la politique, le Parlement vote la loi, la Justice sanctionne. La séparation des pouvoirs protège les libertés."},
+{t:"institutions",q:"Combien y a-t-il de départements en France ?",o:["101", "96", "89", "110"],a:0,e:"La France compte 101 départements (96 en métropole + 5 outre-mer).
+
+📌 À retenir : en France (Ve République), les rôles sont séparés : le Gouvernement met en œuvre la politique, le Parlement vote la loi, la Justice sanctionne. La séparation des pouvoirs protège les libertés."},
+{t:"institutions",q:"Comment est organisé le découpage administratif de la France ?",o:["Selon la Constitution et les lois de la République", "Selon la religion", "Selon une coutume locale", "Selon l’Union européenne uniquement"],a:0,e:"Réponse non officielle : principe général des institutions françaises.
+
+📌 À retenir : en France (Ve République), les rôles sont séparés : le Gouvernement met en œuvre la politique, le Parlement vote la loi, la Justice sanctionne. La séparation des pouvoirs protège les libertés."},
+{t:"institutions",q:"Qui représente l'État dans un département ?",o:["Selon la Constitution et les lois de la République", "Selon la religion", "Selon une coutume locale", "Selon l’Union européenne uniquement"],a:0,e:"Réponse non officielle : principe général des institutions françaises.
+
+📌 À retenir : en France (Ve République), les rôles sont séparés : le Gouvernement met en œuvre la politique, le Parlement vote la loi, la Justice sanctionne. La séparation des pouvoirs protège les libertés."},
+{t:"institutions",q:"Quel est le rôle du Président de la République ?",o:["Selon la Constitution et les lois de la République", "Selon la religion", "Selon une coutume locale", "Selon l’Union européenne uniquement"],a:0,e:"Réponse non officielle : principe général des institutions françaises.
+
+✅ Astuce : le Président est chef de l’État, le Premier ministre dirige l’action du Gouvernement. Ils n’ont pas exactement les mêmes rôles.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : en France (Ve République), les rôles sont séparés : le Gouvernement met en œuvre la politique, le Parlement vote la loi, la Justice sanctionne. La séparation des pouvoirs protège les libertés."},
+{t:"institutions",q:"Quel est le rôle du Premier ministre ?",o:["Le Président de la République", "Le peuple", "L’Assemblée nationale", "Le Sénat"],a:0,e:"Le Premier ministre est nommé par le Président.
+
+✅ Astuce : le Président est chef de l’État, le Premier ministre dirige l’action du Gouvernement. Ils n’ont pas exactement les mêmes rôles.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : en France (Ve République), les rôles sont séparés : le Gouvernement met en œuvre la politique, le Parlement vote la loi, la Justice sanctionne. La séparation des pouvoirs protège les libertés."},
+{t:"institutions",q:"Quel est le rôle du Défenseur des droits ?",o:["Défendre les personnes face aux discriminations et manquements de l'administration", "Voter les lois", "Diriger l'armée", "Nommer les juges"],a:0,e:"Le Défenseur des droits est une autorité indépendante.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : en France (Ve République), les rôles sont séparés : le Gouvernement met en œuvre la politique, le Parlement vote la loi, la Justice sanctionne. La séparation des pouvoirs protège les libertés."},
+{t:"institutions",q:"En quelle année la citoyenneté européenne a-t-elle été créée ?",o:["2002", "1992", "1999", "2010"],a:0,e:"Billets et pièces en euros en 2002.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : en France (Ve République), les rôles sont séparés : le Gouvernement met en œuvre la politique, le Parlement vote la loi, la Justice sanctionne. La séparation des pouvoirs protège les libertés."},
+{t:"institutions",q:"Qui a composé l'hymne de l'Union européenne ?",o:["L’Ode à la joie", "La Marseillaise", "L’Internationale", "God Save the King"],a:0,e:"Hymne de l’UE : l’Ode à la joie (Beethoven).
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : en France (Ve République), les rôles sont séparés : le Gouvernement met en œuvre la politique, le Parlement vote la loi, la Justice sanctionne. La séparation des pouvoirs protège les libertés."},
+{t:"institutions",q:"Quand est célébrée la journée de l'Europe ?",o:["Le 9 mai", "Le 1er janvier", "Le 14 juillet", "Le 11 novembre"],a:0,e:"Journée de l’Europe : 9 mai (déclaration Schuman).
+
+📌 À retenir : en France (Ve République), les rôles sont séparés : le Gouvernement met en œuvre la politique, le Parlement vote la loi, la Justice sanctionne. La séparation des pouvoirs protège les libertés."},
+{t:"institutions",q:"Où est le siège de la Banque centrale européenne ?",o:["Francfort-sur-le-Main", "Bruxelles", "Strasbourg", "Luxembourg"],a:0,e:"La BCE siège à Francfort-sur-le-Main.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : en France (Ve République), les rôles sont séparés : le Gouvernement met en œuvre la politique, le Parlement vote la loi, la Justice sanctionne. La séparation des pouvoirs protège les libertés."},
+{t:"institutions",q:"Où est le siège de la Commission européenne ?",o:["Bruxelles", "Strasbourg", "Francfort", "Luxembourg"],a:0,e:"La Commission européenne siège à Bruxelles.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : en France (Ve République), les rôles sont séparés : le Gouvernement met en œuvre la politique, le Parlement vote la loi, la Justice sanctionne. La séparation des pouvoirs protège les libertés."},
+{t:"institutions",q:"Qui siège au Parlement européen ?",o:["Strasbourg", "Bruxelles", "Luxembourg", "Paris"],a:0,e:"Le siège officiel du Parlement européen est à Strasbourg.
+
+✅ Astuce : ‘voter la loi’ = Parlement. Le Gouvernement prépare et applique, mais ne vote pas la loi.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : en France (Ve République), les rôles sont séparés : le Gouvernement met en œuvre la politique, le Parlement vote la loi, la Justice sanctionne. La séparation des pouvoirs protège les libertés."},
+{t:"institutions",q:"Combien d'États font partie de l'Union européenne au 1er janvier 2025 ?",o:["2002", "1992", "1999", "2010"],a:0,e:"Billets et pièces en euros en 2002.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : en France (Ve République), les rôles sont séparés : le Gouvernement met en œuvre la politique, le Parlement vote la loi, la Justice sanctionne. La séparation des pouvoirs protège les libertés."},
+{t:"institutions",q:"En quelle année le traité de Maastricht, qui marque la fondation de l'Union européenne, a-t-il été signé ?",o:["2002", "1992", "1999", "2010"],a:0,e:"Billets et pièces en euros en 2002.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : en France (Ve République), les rôles sont séparés : le Gouvernement met en œuvre la politique, le Parlement vote la loi, la Justice sanctionne. La séparation des pouvoirs protège les libertés."},
+{t:"institutions",q:"Quel traité concerne la construction de l'Union européenne ?",o:["2002", "1992", "1999", "2010"],a:0,e:"Billets et pièces en euros en 2002.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : en France (Ve République), les rôles sont séparés : le Gouvernement met en œuvre la politique, le Parlement vote la loi, la Justice sanctionne. La séparation des pouvoirs protège les libertés."},
+{t:"institutions",q:"Quel État a quitté l'Union Européenne en 2020 ?",o:["2002", "1992", "1999", "2010"],a:0,e:"Billets et pièces en euros en 2002.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : en France (Ve République), les rôles sont séparés : le Gouvernement met en œuvre la politique, le Parlement vote la loi, la Justice sanctionne. La séparation des pouvoirs protège les libertés."},
+{t:"institutions",q:"Quel est l'hymne de l'Union Européenne ?",o:["L’Ode à la joie", "La Marseillaise", "L’Internationale", "God Save the King"],a:0,e:"Hymne de l’UE : l’Ode à la joie (Beethoven).
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : en France (Ve République), les rôles sont séparés : le Gouvernement met en œuvre la politique, le Parlement vote la loi, la Justice sanctionne. La séparation des pouvoirs protège les libertés."},
+{t:"institutions",q:"De quoi est composé le drapeau européen ?",o:["2002", "1992", "1999", "2010"],a:0,e:"Billets et pièces en euros en 2002.
+
+📌 À retenir : en France (Ve République), les rôles sont séparés : le Gouvernement met en œuvre la politique, le Parlement vote la loi, la Justice sanctionne. La séparation des pouvoirs protège les libertés."},
+{t:"institutions",q:"Qui élit les députés européens ?",o:["2002", "1992", "1999", "2010"],a:0,e:"Billets et pièces en euros en 2002.
+
+✅ Astuce : ‘voter la loi’ = Parlement. Le Gouvernement prépare et applique, mais ne vote pas la loi.
+
+📌 À retenir : en France (Ve République), les rôles sont séparés : le Gouvernement met en œuvre la politique, le Parlement vote la loi, la Justice sanctionne. La séparation des pouvoirs protège les libertés."},
+{t:"institutions",q:"Où est le siège du Parlement européen ?",o:["Strasbourg", "Bruxelles", "Berlin", "Luxembourg"],a:0,e:"Le siège officiel du Parlement européen est à Strasbourg.
+
+✅ Astuce : ‘voter la loi’ = Parlement. Le Gouvernement prépare et applique, mais ne vote pas la loi.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : en France (Ve République), les rôles sont séparés : le Gouvernement met en œuvre la politique, le Parlement vote la loi, la Justice sanctionne. La séparation des pouvoirs protège les libertés."},
+{t:"droits",q:"À quoi sert le droit de grève ?",o:["Défendre des revendications professionnelles", "Cesser de travailler définitivement", "Casser du matériel", "Remplacer le patron"],a:0,e:"Le droit de grève permet l’action collective des salariés.
+
+📌 À retenir : les droits fondamentaux sont garantis mais peuvent être limités pour l’ordre public et la protection des droits d’autrui. Les devoirs (impôts, respect des lois, solidarité) vont avec les droits."},
+{t:"droits",q:"Au nom de quoi l'État justifie-t-il la restriction des droits ?",o:["Un droit (encadré par la loi)", "Interdit", "Facultatif", "Un privilège"],a:0,e:"Réponse non officielle : les droits sont garantis et encadrés par la loi.
+
+📌 À retenir : les droits fondamentaux sont garantis mais peuvent être limités pour l’ordre public et la protection des droits d’autrui. Les devoirs (impôts, respect des lois, solidarité) vont avec les droits."},
+{t:"droits",q:"Laquelle de ces citations est inscrite dans la Déclaration des Droits de l'Homme et du Citoyen de 1789 ?",o:["Un droit (encadré par la loi)", "Interdit", "Facultatif", "Un privilège"],a:0,e:"Réponse non officielle : les droits sont garantis et encadrés par la loi.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : les droits fondamentaux sont garantis mais peuvent être limités pour l’ordre public et la protection des droits d’autrui. Les devoirs (impôts, respect des lois, solidarité) vont avec les droits."},
+{t:"droits",q:"L'article 4 de la Déclaration des droits de l'homme et du citoyen affirme que \"la liberté consiste à pouvoir faire tout ce qui ne nuit pas à autrui\". Qu'est-ce que cela signifie ?",o:["Un droit (encadré par la loi)", "Interdit", "Facultatif", "Un privilège"],a:0,e:"Réponse non officielle : les droits sont garantis et encadrés par la loi.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : les droits fondamentaux sont garantis mais peuvent être limités pour l’ordre public et la protection des droits d’autrui. Les devoirs (impôts, respect des lois, solidarité) vont avec les droits."},
+{t:"droits",q:"Que dit l'article 1er de la Constitution française ?",o:["Un droit (encadré par la loi)", "Interdit", "Facultatif", "Un privilège"],a:0,e:"Réponse non officielle : les droits sont garantis et encadrés par la loi.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : les droits fondamentaux sont garantis mais peuvent être limités pour l’ordre public et la protection des droits d’autrui. Les devoirs (impôts, respect des lois, solidarité) vont avec les droits."},
+{t:"droits",q:"Que garantit la liberté de la presse ?",o:["Le droit de diffuser des informations sans censure préalable, dans le respect de la loi", "Le droit de publier n'importe quoi", "Le monopole de l'État sur les journaux", "Le droit de ne pas payer les journalistes"],a:0,e:"La loi de 1881 interdit la censure préalable mais impose le respect des lois.
+
+✅ Astuce : ‘voter la loi’ = Parlement. Le Gouvernement prépare et applique, mais ne vote pas la loi.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : les droits fondamentaux sont garantis mais peuvent être limités pour l’ordre public et la protection des droits d’autrui. Les devoirs (impôts, respect des lois, solidarité) vont avec les droits."},
+{t:"droits",q:"Que permet la liberté de circulation ?",o:["Un droit (encadré par la loi)", "Interdit", "Facultatif", "Un privilège"],a:0,e:"Réponse non officielle : les droits sont garantis et encadrés par la loi.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : les droits fondamentaux sont garantis mais peuvent être limités pour l’ordre public et la protection des droits d’autrui. Les devoirs (impôts, respect des lois, solidarité) vont avec les droits."},
+{t:"droits",q:"Que signifie être citoyen d'un État ?",o:["Un droit (encadré par la loi)", "Interdit", "Facultatif", "Un privilège"],a:0,e:"Réponse non officielle : les droits sont garantis et encadrés par la loi.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : les droits fondamentaux sont garantis mais peuvent être limités pour l’ordre public et la protection des droits d’autrui. Les devoirs (impôts, respect des lois, solidarité) vont avec les droits."},
+{t:"droits",q:"Que sont les droits fondamentaux ?",o:["Un droit (encadré par la loi)", "Interdit", "Facultatif", "Un privilège"],a:0,e:"Réponse non officielle : les droits sont garantis et encadrés par la loi.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : les droits fondamentaux sont garantis mais peuvent être limités pour l’ordre public et la protection des droits d’autrui. Les devoirs (impôts, respect des lois, solidarité) vont avec les droits."},
+{t:"droits",q:"Quel droit protège une personne contre une arrestation arbitraire ?",o:["Un droit (encadré par la loi)", "Interdit", "Facultatif", "Un privilège"],a:0,e:"Réponse non officielle : les droits sont garantis et encadrés par la loi.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : les droits fondamentaux sont garantis mais peuvent être limités pour l’ordre public et la protection des droits d’autrui. Les devoirs (impôts, respect des lois, solidarité) vont avec les droits."},
+{t:"droits",q:"Quel est le texte fondateur établissant les droits et les devoirs de chaque citoyen ?",o:["Un droit (encadré par la loi)", "Interdit", "Facultatif", "Un privilège"],a:0,e:"Réponse non officielle : les droits sont garantis et encadrés par la loi.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : les droits fondamentaux sont garantis mais peuvent être limités pour l’ordre public et la protection des droits d’autrui. Les devoirs (impôts, respect des lois, solidarité) vont avec les droits."},
+{t:"droits",q:"Quel texte affirme que tous les hommes naissent libres et égaux en droits ?",o:["Un droit (encadré par la loi)", "Interdit", "Facultatif", "Un privilège"],a:0,e:"Réponse non officielle : les droits sont garantis et encadrés par la loi.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : les droits fondamentaux sont garantis mais peuvent être limités pour l’ordre public et la protection des droits d’autrui. Les devoirs (impôts, respect des lois, solidarité) vont avec les droits."},
+{t:"droits",q:"Quelle situation est une atteinte à la dignité humaine ?",o:["Un droit (encadré par la loi)", "Interdit", "Facultatif", "Un privilège"],a:0,e:"Réponse non officielle : les droits sont garantis et encadrés par la loi.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : les droits fondamentaux sont garantis mais peuvent être limités pour l’ordre public et la protection des droits d’autrui. Les devoirs (impôts, respect des lois, solidarité) vont avec les droits."},
+{t:"droits",q:"Qu'est-ce que la liberté d'expression ?",o:["Un droit (encadré par la loi)", "Interdit", "Facultatif", "Un privilège"],a:0,e:"Réponse non officielle : les droits sont garantis et encadrés par la loi.
+
+✅ Astuce : la liberté d’expression n’est jamais ‘totale’. Elle s’arrête aux limites prévues par la loi (diffamation, injure, haine, menaces…).
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : les droits fondamentaux sont garantis mais peuvent être limités pour l’ordre public et la protection des droits d’autrui. Les devoirs (impôts, respect des lois, solidarité) vont avec les droits."},
+{t:"droits",q:"Suite à une interpellation par la police, il est possible de :",o:["Un droit (encadré par la loi)", "Interdit", "Facultatif", "Un privilège"],a:0,e:"Réponse non officielle : les droits sont garantis et encadrés par la loi.
+
+📌 À retenir : les droits fondamentaux sont garantis mais peuvent être limités pour l’ordre public et la protection des droits d’autrui. Les devoirs (impôts, respect des lois, solidarité) vont avec les droits."},
+{t:"droits",q:"Tous les citoyens français ont-ils une religion ?",o:["Un droit (encadré par la loi)", "Interdit", "Facultatif", "Un privilège"],a:0,e:"Réponse non officielle : les droits sont garantis et encadrés par la loi.
+
+📌 À retenir : les droits fondamentaux sont garantis mais peuvent être limités pour l’ordre public et la protection des droits d’autrui. Les devoirs (impôts, respect des lois, solidarité) vont avec les droits."},
+{t:"droits",q:"À quel âge est la majorité numérique en France ?",o:["15 ans", "13 ans", "16 ans", "18 ans"],a:0,e:"Majorité numérique : 15 ans (référence pédagogique).
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : les droits fondamentaux sont garantis mais peuvent être limités pour l’ordre public et la protection des droits d’autrui. Les devoirs (impôts, respect des lois, solidarité) vont avec les droits."},
+{t:"droits",q:"Dans lequel de ces endroits est-on autorisé à fumer ?",o:["Un droit (encadré par la loi)", "Interdit", "Facultatif", "Un privilège"],a:0,e:"Réponse non officielle : les droits sont garantis et encadrés par la loi.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : les droits fondamentaux sont garantis mais peuvent être limités pour l’ordre public et la protection des droits d’autrui. Les devoirs (impôts, respect des lois, solidarité) vont avec les droits."},
+{t:"droits",q:"En France, la conduite sans permis d'une moto est :",o:["Un droit (encadré par la loi)", "Interdit", "Facultatif", "Un privilège"],a:0,e:"Réponse non officielle : les droits sont garantis et encadrés par la loi.
+
+📌 À retenir : les droits fondamentaux sont garantis mais peuvent être limités pour l’ordre public et la protection des droits d’autrui. Les devoirs (impôts, respect des lois, solidarité) vont avec les droits."},
+{t:"droits",q:"En quoi consiste le devoir de solidarité ?",o:["Un droit (encadré par la loi)", "Interdit", "Facultatif", "Un privilège"],a:0,e:"Réponse non officielle : les droits sont garantis et encadrés par la loi.
+
+📌 À retenir : les droits fondamentaux sont garantis mais peuvent être limités pour l’ordre public et la protection des droits d’autrui. Les devoirs (impôts, respect des lois, solidarité) vont avec les droits."},
+{t:"droits",q:"Est-ce légal d'être marié à plusieurs personnes en même temps ?",o:["Un droit (encadré par la loi)", "Interdit", "Facultatif", "Un privilège"],a:0,e:"Réponse non officielle : les droits sont garantis et encadrés par la loi.
+
+📌 À retenir : les droits fondamentaux sont garantis mais peuvent être limités pour l’ordre public et la protection des droits d’autrui. Les devoirs (impôts, respect des lois, solidarité) vont avec les droits."},
+{t:"droits",q:"Est-ce obligatoire de déclarer ses impôts chaque année en France ?",o:["Un droit (encadré par la loi)", "Interdit", "Facultatif", "Un privilège"],a:0,e:"Réponse non officielle : les droits sont garantis et encadrés par la loi.
+
+✅ Astuce : payer l’impôt est un devoir civique qui finance les services publics et la solidarité nationale.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : les droits fondamentaux sont garantis mais peuvent être limités pour l’ordre public et la protection des droits d’autrui. Les devoirs (impôts, respect des lois, solidarité) vont avec les droits."},
+{t:"droits",q:"Est-il obligatoire de porter secours à une personne en danger ?",o:["Oui, c’est obligatoire", "Non", "Seulement si on connaît la personne", "Seulement si on est médecin"],a:0,e:"Non-assistance à personne en danger : obligation de porter secours.
+
+✅ Astuce : ‘non-assistance à personne en danger’ est un délit : on doit alerter/porter secours si possible sans se mettre en danger.
+
+📌 À retenir : les droits fondamentaux sont garantis mais peuvent être limités pour l’ordre public et la protection des droits d’autrui. Les devoirs (impôts, respect des lois, solidarité) vont avec les droits."},
+{t:"droits",q:"Être juré d'assises est :",o:["Un droit (encadré par la loi)", "Interdit", "Facultatif", "Un privilège"],a:0,e:"Réponse non officielle : les droits sont garantis et encadrés par la loi.
+
+📌 À retenir : les droits fondamentaux sont garantis mais peuvent être limités pour l’ordre public et la protection des droits d’autrui. Les devoirs (impôts, respect des lois, solidarité) vont avec les droits."},
+{t:"droits",q:"La vente d'alcool en France est interdite aux personnes de moins de :",o:["18 ans", "16 ans", "17 ans", "21 ans"],a:0,e:"Vente d’alcool interdite aux mineurs.
+
+📌 À retenir : les droits fondamentaux sont garantis mais peuvent être limités pour l’ordre public et la protection des droits d’autrui. Les devoirs (impôts, respect des lois, solidarité) vont avec les droits."},
+{t:"droits",q:"Le non-respect du code de la route est :",o:["Un droit (encadré par la loi)", "Interdit", "Facultatif", "Un privilège"],a:0,e:"Réponse non officielle : les droits sont garantis et encadrés par la loi.
+
+📌 À retenir : les droits fondamentaux sont garantis mais peuvent être limités pour l’ordre public et la protection des droits d’autrui. Les devoirs (impôts, respect des lois, solidarité) vont avec les droits."},
+{t:"droits",q:"Lequel de ces crimes ou délits peut entrainer la privation des droits civils et politiques par un juge ?",o:["Un droit (encadré par la loi)", "Interdit", "Facultatif", "Un privilège"],a:0,e:"Réponse non officielle : les droits sont garantis et encadrés par la loi.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : les droits fondamentaux sont garantis mais peuvent être limités pour l’ordre public et la protection des droits d’autrui. Les devoirs (impôts, respect des lois, solidarité) vont avec les droits."},
+{t:"droits",q:"Pour obtenir une carte d'identité, il faut :",o:["Un droit (encadré par la loi)", "Interdit", "Facultatif", "Un privilège"],a:0,e:"Réponse non officielle : les droits sont garantis et encadrés par la loi.
+
+📌 À retenir : les droits fondamentaux sont garantis mais peuvent être limités pour l’ordre public et la protection des droits d’autrui. Les devoirs (impôts, respect des lois, solidarité) vont avec les droits."},
+{t:"droits",q:"Pour quel motif peut-on limiter la liberté d'expression ?",o:["Pour l'ordre public ou la protection des droits d'autrui", "Pour critiquer le gouvernement", "Pour des raisons esthétiques", "On ne peut jamais la limiter"],a:0,e:"La liberté d'expression peut être limitée pour protéger l'ordre public ou les droits d'autrui."},
+{t:"droits",q:"Que doit faire un citoyen s'il est appelé à être juré dans un procès d'assises ?",o:["Un droit (encadré par la loi)", "Interdit", "Facultatif", "Un privilège"],a:0,e:"Réponse non officielle : les droits sont garantis et encadrés par la loi.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : les droits fondamentaux sont garantis mais peuvent être limités pour l’ordre public et la protection des droits d’autrui. Les devoirs (impôts, respect des lois, solidarité) vont avec les droits."},
+{t:"droits",q:"Quel est l'âge de la majorité civile en France ?",o:["18 ans", "16 ans", "21 ans", "25 ans"],a:0,e:"La majorité civile est à 18 ans.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : les droits fondamentaux sont garantis mais peuvent être limités pour l’ordre public et la protection des droits d’autrui. Les devoirs (impôts, respect des lois, solidarité) vont avec les droits."},
+{t:"droits",q:"Quel est l'un des devoirs principaux d'un citoyen français ?",o:["Un droit (encadré par la loi)", "Interdit", "Facultatif", "Un privilège"],a:0,e:"Réponse non officielle : les droits sont garantis et encadrés par la loi.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : les droits fondamentaux sont garantis mais peuvent être limités pour l’ordre public et la protection des droits d’autrui. Les devoirs (impôts, respect des lois, solidarité) vont avec les droits."},
+{t:"droits",q:"Quelle est l'infraction la plus grave ?",o:["Un droit (encadré par la loi)", "Interdit", "Facultatif", "Un privilège"],a:0,e:"Réponse non officielle : les droits sont garantis et encadrés par la loi.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : les droits fondamentaux sont garantis mais peuvent être limités pour l’ordre public et la protection des droits d’autrui. Les devoirs (impôts, respect des lois, solidarité) vont avec les droits."},
+{t:"droits",q:"Qu'est-ce que la citoyenneté numérique ?",o:["Un droit (encadré par la loi)", "Interdit", "Facultatif", "Un privilège"],a:0,e:"Réponse non officielle : les droits sont garantis et encadrés par la loi.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : les droits fondamentaux sont garantis mais peuvent être limités pour l’ordre public et la protection des droits d’autrui. Les devoirs (impôts, respect des lois, solidarité) vont avec les droits."},
+{t:"droits",q:"Qu'est-ce que le devoir de mémoire ?",o:["Un droit (encadré par la loi)", "Interdit", "Facultatif", "Un privilège"],a:0,e:"Réponse non officielle : les droits sont garantis et encadrés par la loi.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : les droits fondamentaux sont garantis mais peuvent être limités pour l’ordre public et la protection des droits d’autrui. Les devoirs (impôts, respect des lois, solidarité) vont avec les droits."},
+{t:"droits",q:"Une personne est privée de ses droits civils et politiques pendant 5 ans suite à une condamnation.",o:["Un droit (encadré par la loi)", "Interdit", "Facultatif", "Un privilège"],a:0,e:"Réponse non officielle : les droits sont garantis et encadrés par la loi.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : les droits fondamentaux sont garantis mais peuvent être limités pour l’ordre public et la protection des droits d’autrui. Les devoirs (impôts, respect des lois, solidarité) vont avec les droits."},
+{t:"droits",q:"Parmi ces propositions laquelle est correcte ? Pendant 5 ans,...",o:["Un droit (encadré par la loi)", "Interdit", "Facultatif", "Un privilège"],a:0,e:"Réponse non officielle : les droits sont garantis et encadrés par la loi.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : les droits fondamentaux sont garantis mais peuvent être limités pour l’ordre public et la protection des droits d’autrui. Les devoirs (impôts, respect des lois, solidarité) vont avec les droits."},
+{t:"histoire",q:"Parmi ces textes, lequel a été adopté sous Napoléon Ier ?",o:["Un repère majeur de l’histoire de France", "Un repère de l’UE", "Une coutume récente", "Une information non pertinente"],a:0,e:"Réponse non officielle : repère historique/culturel.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Qui a été président de la Ve République ?",o:["Un repère majeur de l’histoire de France", "Un repère de l’UE", "Une coutume récente", "Une information non pertinente"],a:0,e:"Réponse non officielle : repère historique/culturel.
+
+✅ Astuce : le Président est chef de l’État, le Premier ministre dirige l’action du Gouvernement. Ils n’ont pas exactement les mêmes rôles.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Que signifie la date du 14 juillet pour les Français ?",o:["Un repère majeur de l’histoire de France", "Un repère de l’UE", "Une coutume récente", "Une information non pertinente"],a:0,e:"Réponse non officielle : repère historique/culturel.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Lequel de ces pays est un pays fondateur de l'Union Européenne ?",o:["2002", "1992", "1999", "2010"],a:0,e:"Billets et pièces en euros en 2002.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Dans quelle région est située une partie des plages du débarquement ayant permis d'engager la libération de la France ?",o:["Un repère majeur de l’histoire de France", "Un repère de l’UE", "Une coutume récente", "Une information non pertinente"],a:0,e:"Réponse non officielle : repère historique/culturel.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Dans quelle ville les rois de France étaient-ils couronnés ?",o:["Un repère majeur de l’histoire de France", "Un repère de l’UE", "Une coutume récente", "Une information non pertinente"],a:0,e:"Réponse non officielle : repère historique/culturel.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Quel roi de France a été guillotiné pendant la Révolution française ?",o:["1789", "1792", "1804", "1848"],a:0,e:"La Révolution française débute en 1789.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"En quelle année a débuté la Révolution française ?",o:["1789", "1776", "1804", "1848"],a:0,e:"La Révolution française a commencé en 1789 avec la prise de la Bastille le 14 juillet."},
+{t:"histoire",q:"En quelle année Napoléon Ier est-il devenu empereur ?",o:["Un repère majeur de l’histoire de France", "Un repère de l’UE", "Une coutume récente", "Une information non pertinente"],a:0,e:"Réponse non officielle : repère historique/culturel.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Lequel de ces personnages a un lien avec la République française ?",o:["Un repère majeur de l’histoire de France", "Un repère de l’UE", "Une coutume récente", "Une information non pertinente"],a:0,e:"Réponse non officielle : repère historique/culturel.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"De quand date l'appel à la résistance du général de Gaulle ?",o:["Un repère majeur de l’histoire de France", "Un repère de l’UE", "Une coutume récente", "Une information non pertinente"],a:0,e:"Réponse non officielle : repère historique/culturel.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Qu'est-ce que la Shoah ?",o:["Le génocide des Juifs par les nazis pendant la Seconde Guerre mondiale", "Une bataille", "Un traité de paix", "Une révolution"],a:0,e:"La Shoah désigne l'extermination de 6 millions de Juifs par le régime nazi (1941-1945)."},
+{t:"histoire",q:"Quel pays a été une colonie française ?",o:["Un repère majeur de l’histoire de France", "Un repère de l’UE", "Une coutume récente", "Une information non pertinente"],a:0,e:"Réponse non officielle : repère historique/culturel.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Depuis quand les Français élisent-ils le président de la République au suffrage universel direct ?",o:["Un repère majeur de l’histoire de France", "Un repère de l’UE", "Une coutume récente", "Une information non pertinente"],a:0,e:"Réponse non officielle : repère historique/culturel.
+
+✅ Astuce : le Président est chef de l’État, le Premier ministre dirige l’action du Gouvernement. Ils n’ont pas exactement les mêmes rôles.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"En quelle année l'Union européenne a-t-elle été fondée?",o:["2002", "1992", "1999", "2010"],a:0,e:"Billets et pièces en euros en 2002.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Quand a eu lieu la Seconde guerre mondiale ?",o:["1939-1945", "1914-1918", "1945-1950", "1870-1871"],a:0,e:"Seconde Guerre mondiale : 1939-1945.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+✅ Astuce : 11 novembre = armistice 1918. 8 mai = victoire 1945 en Europe.
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Quand a eu lieu la Première guerre mondiale ?",o:["1914-1918", "1870-1871", "1939-1945", "1789-1799"],a:0,e:"La Grande Guerre s'est déroulée de 1914 à 1918. Le 11 novembre en commémore l'armistice."},
+{t:"histoire",q:"Sous quel président a été abolie la peine de mort en France ?",o:["François Mitterrand", "Charles de Gaulle", "Jacques Chirac", "Valéry Giscard d’Estaing"],a:0,e:"Abolition en 1981 sous François Mitterrand.
+
+✅ Astuce : le Président est chef de l’État, le Premier ministre dirige l’action du Gouvernement. Ils n’ont pas exactement les mêmes rôles.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Que célèbre-t-on le 8 mai ?",o:["La fin de la Seconde Guerre mondiale en Europe", "L’armistice de 1918", "La fête nationale", "La journée de l’Europe"],a:0,e:"8 mai 1945 : fin de la guerre en Europe.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+✅ Astuce : 11 novembre = armistice 1918. 8 mai = victoire 1945 en Europe.
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Quelle est la première étape de la construction européenne en 1951 ?",o:["2002", "1992", "1999", "2010"],a:0,e:"Billets et pièces en euros en 2002.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Qui était une figure de la Résistance française pendant la Seconde Guerre mondiale ?",o:["1939-1945", "1914-1918", "1945-1950", "1870-1871"],a:0,e:"Seconde Guerre mondiale : 1939-1945.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+✅ Astuce : 11 novembre = armistice 1918. 8 mai = victoire 1945 en Europe.
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Le 11 novembre est un jour férié. À quoi correspond cette date ?",o:["L’armistice de 1918", "La victoire de 1945", "La prise de la Bastille", "La loi de 1905"],a:0,e:"11 novembre : armistice de 1918.
+
+✅ Astuce : 11 novembre = armistice 1918. 8 mai = victoire 1945 en Europe.
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Depuis quand l'esclavage a-t-il été aboli en France ?",o:["Un repère majeur de l’histoire de France", "Un repère de l’UE", "Une coutume récente", "Une information non pertinente"],a:0,e:"Réponse non officielle : repère historique/culturel.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Qui a aboli l'esclavage en France ?",o:["Un repère majeur de l’histoire de France", "Un repère de l’UE", "Une coutume récente", "Une information non pertinente"],a:0,e:"Réponse non officielle : repère historique/culturel.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Depuis quelle année l'école publique est-elle gratuite ?",o:["Un repère majeur de l’histoire de France", "Un repère de l’UE", "Une coutume récente", "Une information non pertinente"],a:0,e:"Réponse non officielle : repère historique/culturel.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+✅ Astuce : l’instruction est obligatoire de 3 à 16 ans. L’école publique est laïque ; les règles s’appliquent à tous.
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"En 1944, qu'est-ce qui a changé pour les femmes ?",o:["Elles ont obtenu le droit de vote", "Le droit de travailler", "Le droit de divorcer", "Le droit d'aller à l'école"],a:0,e:"Le 21 avril 1944, les femmes obtiennent le droit de vote.
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Quelle organisation a été créée en 1945 après la Seconde Guerre mondiale ?",o:["1939-1945", "1914-1918", "1945-1950", "1870-1871"],a:0,e:"Seconde Guerre mondiale : 1939-1945.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+✅ Astuce : 11 novembre = armistice 1918. 8 mai = victoire 1945 en Europe.
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"En quelle année l'euro est-il devenu la monnaie officielle de la France ?",o:["2002", "1992", "1999", "2010"],a:0,e:"Billets et pièces en euros en 2002.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Lors de la seconde guerre mondiale, à quelle date la ville de Paris a-t-elle été libérée ?",o:["1939-1945", "1914-1918", "1945-1950", "1870-1871"],a:0,e:"Seconde Guerre mondiale : 1939-1945.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+✅ Astuce : 11 novembre = armistice 1918. 8 mai = victoire 1945 en Europe.
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Quel était le principal port français impliqué dans la traite négrière au XVIIIe siècle ?",o:["Un repère majeur de l’histoire de France", "Un repère de l’UE", "Une coutume récente", "Une information non pertinente"],a:0,e:"Réponse non officielle : repère historique/culturel.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Quel célèbre philosophe des Lumières a dénoncé l'esclavage ?",o:["Un repère majeur de l’histoire de France", "Un repère de l’UE", "Une coutume récente", "Une information non pertinente"],a:0,e:"Réponse non officielle : repère historique/culturel.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Quel peintre est français ?",o:["Un repère majeur de l’histoire de France", "Un repère de l’UE", "Une coutume récente", "Une information non pertinente"],a:0,e:"Réponse non officielle : repère historique/culturel.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Quel plat est une spécialité de la cuisine française ?",o:["Un repère majeur de l’histoire de France", "Un repère de l’UE", "Une coutume récente", "Une information non pertinente"],a:0,e:"Réponse non officielle : repère historique/culturel.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Qui était Marie Curie ?",o:["Une scientifique (prix Nobel)", "Une reine", "Une écrivaine", "Une actrice"],a:0,e:"Marie Curie est une scientifique.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Qui a peint \"La liberté guidant le peuple\" ?",o:["Un repère majeur de l’histoire de France", "Un repère de l’UE", "Une coutume récente", "Une information non pertinente"],a:0,e:"Réponse non officielle : repère historique/culturel.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Dans quel grand musée parisien est exposée la Joconde ?",o:["Un repère majeur de l’histoire de France", "Un repère de l’UE", "Une coutume récente", "Une information non pertinente"],a:0,e:"Réponse non officielle : repère historique/culturel.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Quel château célèbre se trouve près de Paris et symbolise le pouvoir royal de Louis XIV ?",o:["Un repère majeur de l’histoire de France", "Un repère de l’UE", "Une coutume récente", "Une information non pertinente"],a:0,e:"Réponse non officielle : repère historique/culturel.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Où peut-on voir des peintures préhistoriques en France ?",o:["Un repère majeur de l’histoire de France", "Un repère de l’UE", "Une coutume récente", "Une information non pertinente"],a:0,e:"Réponse non officielle : repère historique/culturel.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Quel peintre célèbre a peint les Nymphéas ?",o:["Un repère majeur de l’histoire de France", "Un repère de l’UE", "Une coutume récente", "Une information non pertinente"],a:0,e:"Réponse non officielle : repère historique/culturel.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Pendant quelles journées peut-on visiter gratuitement des lieux culturels en France ?",o:["Un repère majeur de l’histoire de France", "Un repère de l’UE", "Une coutume récente", "Une information non pertinente"],a:0,e:"Réponse non officielle : repère historique/culturel.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Que symbolise le 1er mai ?",o:["Un repère majeur de l’histoire de France", "Un repère de l’UE", "Une coutume récente", "Une information non pertinente"],a:0,e:"Réponse non officielle : repère historique/culturel.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Qui était Monsieur Rouget de Lisle ?",o:["Un repère majeur de l’histoire de France", "Un repère de l’UE", "Une coutume récente", "Une information non pertinente"],a:0,e:"Réponse non officielle : repère historique/culturel.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"À quelle occasion a été construite la Tour Eiffel ?",o:["Un repère majeur de l’histoire de France", "Un repère de l’UE", "Une coutume récente", "Une information non pertinente"],a:0,e:"Réponse non officielle : repère historique/culturel.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Quelle chaîne de montagnes est située entre la France et l'Italie ?",o:["Un repère majeur de l’histoire de France", "Un repère de l’UE", "Une coutume récente", "Une information non pertinente"],a:0,e:"Réponse non officielle : repère historique/culturel.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Qui était Molière ?",o:["Un dramaturge et comédien du XVIIe siècle", "Un peintre impressionniste", "Un roi de France", "Un général de la Révolution"],a:0,e:"Molière (1622–1673) est le plus célèbre auteur de comédies françaises (Le Malade imaginaire, Tartuffe...)."},
+{t:"histoire",q:"Qui était Charles Baudelaire ?",o:["Un poète", "Un peintre", "Un président", "Un explorateur"],a:0,e:"Baudelaire est un poète.
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Qui était George Sand ?",o:["Une écrivaine", "Une reine", "Une scientifique", "Une militaire"],a:0,e:"George Sand est une romancière.
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Qui était Simone de Beauvoir ?",o:["Une philosophe et écrivaine", "Une reine", "Une peintre", "Une astronaute"],a:0,e:"Simone de Beauvoir est une philosophe.
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Qui était Albert Camus ?",o:["Un écrivain", "Un compositeur", "Un roi", "Un peintre"],a:0,e:"Albert Camus est un écrivain.
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Qui était Marguerite Yourcenar ?",o:["Première femme élue à l'Académie française, écrivaine", "Une scientifique", "Une résistante", "Une chanteuse"],a:0,e:"Marguerite Yourcenar (1903–1987) fut élue à l'Académie française en 1980.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Qui était Paul Cézanne ?",o:["Un peintre", "Un sculpteur", "Un musicien", "Un roi"],a:0,e:"Paul Cézanne est un peintre.
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Qui était Auguste Rodin ?",o:["Un sculpteur", "Un peintre", "Un écrivain", "Un président"],a:0,e:"Auguste Rodin est un sculpteur.
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Qui était un célèbre compositeur français ?",o:["Un repère majeur de l’histoire de France", "Un repère de l’UE", "Une coutume récente", "Une information non pertinente"],a:0,e:"Réponse non officielle : repère historique/culturel.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Qui était Auguste Renoir ?",o:["Un peintre", "Un sculpteur", "Un écrivain", "Un roi"],a:0,e:"Renoir est un peintre.
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Quel musée est situé à Paris ?",o:["Un repère majeur de l’histoire de France", "Un repère de l’UE", "Une coutume récente", "Une information non pertinente"],a:0,e:"Réponse non officielle : repère historique/culturel.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Quel monument historique se trouve sur une île en Normandie ?",o:["L’ONU", "L’OTAN", "L’UE", "La CECA"],a:0,e:"Organisation créée en 1945 : l’ONU.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Quelle ville française fait partie des 10 plus grandes métropoles du pays ?",o:["Un repère majeur de l’histoire de France", "Un repère de l’UE", "Une coutume récente", "Une information non pertinente"],a:0,e:"Réponse non officielle : repère historique/culturel.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Quelle île fait partie des Antilles françaises ?",o:["Un repère majeur de l’histoire de France", "Un repère de l’UE", "Une coutume récente", "Une information non pertinente"],a:0,e:"Réponse non officielle : repère historique/culturel.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Quelle île est française ?",o:["Un repère majeur de l’histoire de France", "Un repère de l’UE", "Une coutume récente", "Une information non pertinente"],a:0,e:"Réponse non officielle : repère historique/culturel.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Quelle est la plus haute montagne de France ?",o:["Un repère majeur de l’histoire de France", "Un repère de l’UE", "Une coutume récente", "Une information non pertinente"],a:0,e:"Réponse non officielle : repère historique/culturel.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Quelle île française est située dans l'océan indien ?",o:["Un repère majeur de l’histoire de France", "Un repère de l’UE", "Une coutume récente", "Une information non pertinente"],a:0,e:"Réponse non officielle : repère historique/culturel.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Quel département français a une frontière avec le Brésil ?",o:["Un repère majeur de l’histoire de France", "Un repère de l’UE", "Une coutume récente", "Une information non pertinente"],a:0,e:"Réponse non officielle : repère historique/culturel.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"De quelle ville française décolle la fusée Ariane ?",o:["Un repère majeur de l’histoire de France", "Un repère de l’UE", "Une coutume récente", "Une information non pertinente"],a:0,e:"Réponse non officielle : repère historique/culturel.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Quelle mer ou océan borde la France métropolitaine ?",o:["Un repère majeur de l’histoire de France", "Un repère de l’UE", "Une coutume récente", "Une information non pertinente"],a:0,e:"Réponse non officielle : repère historique/culturel.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Quelle île est un département d'outre-mer français ?",o:["Un repère majeur de l’histoire de France", "Un repère de l’UE", "Une coutume récente", "Une information non pertinente"],a:0,e:"Réponse non officielle : repère historique/culturel.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Qu'est-ce que la France d'outre-mer ?",o:["Un repère majeur de l’histoire de France", "Un repère de l’UE", "Une coutume récente", "Une information non pertinente"],a:0,e:"Réponse non officielle : repère historique/culturel.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Quelle est la population approximative de la France en 2025 ?",o:["Environ 68 millions", "45 millions", "55 millions", "85 millions"],a:0,e:"Population approximative de la France : ~68 millions (2025).
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Quel est le principal port maritime de France ?",o:["Un repère majeur de l’histoire de France", "Un repère de l’UE", "Une coutume récente", "Une information non pertinente"],a:0,e:"Réponse non officielle : repère historique/culturel.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Combien y a-t-il de régions en France métropolitaine ?",o:["13", "12", "18", "22"],a:0,e:"Depuis la réforme territoriale, il y a 13 régions métropolitaines.
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Quelle île française se trouve au sud-est du continent africain ?",o:["Un repère majeur de l’histoire de France", "Un repère de l’UE", "Une coutume récente", "Une information non pertinente"],a:0,e:"Réponse non officielle : repère historique/culturel.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Quel est le chef-lieu de la région Auvergne-Rhône-Alpes ?",o:["Les Alpes", "Les Pyrénées", "Le Jura", "Le Massif central"],a:0,e:"Chaîne entre France et Italie : les Alpes.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Quel est le chef-lieu de la région Bretagne ?",o:["Un repère majeur de l’histoire de France", "Un repère de l’UE", "Une coutume récente", "Une information non pertinente"],a:0,e:"Réponse non officielle : repère historique/culturel.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Quel est le chef-lieu de la région Provence-Alpes-Côte d'Azur ?",o:["Les Alpes", "Les Pyrénées", "Le Jura", "Le Massif central"],a:0,e:"Chaîne entre France et Italie : les Alpes.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Quel est le 101ème département français depuis 2011 ?",o:["Un repère majeur de l’histoire de France", "Un repère de l’UE", "Une coutume récente", "Une information non pertinente"],a:0,e:"Réponse non officielle : repère historique/culturel.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Quelle région française est réputée pour ses stations de ski ?",o:["Un repère majeur de l’histoire de France", "Un repère de l’UE", "Une coutume récente", "Une information non pertinente"],a:0,e:"Réponse non officielle : repère historique/culturel.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"histoire",q:"Quel fleuve traverse Paris ?",o:["La Seine", "La Loire", "Le Rhône", "La Garonne"],a:0,e:"La Seine traverse Paris. Ses quais sont au patrimoine mondial de l'UNESCO.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : on attend surtout des repères (dates, personnages, événements) et leur signification dans l’histoire de France et de l’Europe."},
+{t:"societe",q:"Où faut-il déclarer la naissance d'un enfant ?",o:["À la mairie du lieu de naissance, dans les 5 jours", "À la préfecture", "Au tribunal", "À l'hôpital uniquement"],a:0,e:"La naissance doit être déclarée à la mairie du lieu de naissance dans les 5 jours."},
+{t:"societe",q:"Quelle action peut réaliser le locataire d'un logement sans l'autorisation du propriétaire ?",o:["Une démarche à effectuer auprès d’un service public", "Aucune démarche", "Une démarche privée uniquement", "Interdit"],a:0,e:"Réponse non officielle : règles de vie en société.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : ce sont des règles de la vie quotidienne (démarches, santé, travail, école) et des droits/devoirs en société."},
+{t:"societe",q:"Quel mariage est reconnu légalement ?",o:["Une démarche à effectuer auprès d’un service public", "Aucune démarche", "Une démarche privée uniquement", "Interdit"],a:0,e:"Réponse non officielle : règles de vie en société.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : ce sont des règles de la vie quotidienne (démarches, santé, travail, école) et des droits/devoirs en société."},
+{t:"societe",q:"Le stationnement sur une place réservée aux personnes handicapées :",o:["Une démarche à effectuer auprès d’un service public", "Aucune démarche", "Une démarche privée uniquement", "Interdit"],a:0,e:"Réponse non officielle : règles de vie en société.
+
+📌 À retenir : ce sont des règles de la vie quotidienne (démarches, santé, travail, école) et des droits/devoirs en société."},
+{t:"societe",q:"Si une machine à laver est cassée, il est possible de :",o:["Une démarche à effectuer auprès d’un service public", "Aucune démarche", "Une démarche privée uniquement", "Interdit"],a:0,e:"Réponse non officielle : règles de vie en société.
+
+📌 À retenir : ce sont des règles de la vie quotidienne (démarches, santé, travail, école) et des droits/devoirs en société."},
+{t:"societe",q:"Dans quel cas faut-il déclarer son enfant au service d'état civil ?",o:["Une démarche à effectuer auprès d’un service public", "Aucune démarche", "Une démarche privée uniquement", "Interdit"],a:0,e:"Réponse non officielle : règles de vie en société.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : ce sont des règles de la vie quotidienne (démarches, santé, travail, école) et des droits/devoirs en société."},
+{t:"societe",q:"Quand faut-il déclarer son enfant au service d'état civil ?",o:["Une démarche à effectuer auprès d’un service public", "Aucune démarche", "Une démarche privée uniquement", "Interdit"],a:0,e:"Réponse non officielle : règles de vie en société.
+
+📌 À retenir : ce sont des règles de la vie quotidienne (démarches, santé, travail, école) et des droits/devoirs en société."},
+{t:"societe",q:"Quel numéro d'urgence permet d'appeler la police ?",o:["17", "15", "18", "112"],a:0,e:"17 = police/gendarmerie.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : ce sont des règles de la vie quotidienne (démarches, santé, travail, école) et des droits/devoirs en société."},
+{t:"societe",q:"Quel numéro d'urgence permet d'appeler le SAMU ?",o:["15", "17", "18", "112"],a:0,e:"15 = SAMU.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : ce sont des règles de la vie quotidienne (démarches, santé, travail, école) et des droits/devoirs en société."},
+{t:"societe",q:"Auprès de quelle institution les parents peuvent inscrire leurs enfants à l'école publique ?",o:["Une démarche à effectuer auprès d’un service public", "Aucune démarche", "Une démarche privée uniquement", "Interdit"],a:0,e:"Réponse non officielle : règles de vie en société.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+✅ Astuce : l’instruction est obligatoire de 3 à 16 ans. L’école publique est laïque ; les règles s’appliquent à tous.
+
+📌 À retenir : ce sont des règles de la vie quotidienne (démarches, santé, travail, école) et des droits/devoirs en société."},
+{t:"societe",q:"En cas de divorce, qui exerce l'autorité parentale ?",o:["Les deux parents, sauf décision contraire du juge", "Uniquement le père", "Uniquement la mère", "Le parent avec la garde"],a:0,e:"L'autorité parentale est exercée conjointement, même après divorce.
+
+📌 À retenir : ce sont des règles de la vie quotidienne (démarches, santé, travail, école) et des droits/devoirs en société."},
+{t:"societe",q:"Quelle aide permet aux personnes qui ont des difficultés financières d'avoir un avocat ?",o:["Une démarche à effectuer auprès d’un service public", "Aucune démarche", "Une démarche privée uniquement", "Interdit"],a:0,e:"Réponse non officielle : règles de vie en société.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : ce sont des règles de la vie quotidienne (démarches, santé, travail, école) et des droits/devoirs en société."},
+{t:"societe",q:"Qui peut demander le divorce de personnes mariées ?",o:["Une démarche à effectuer auprès d’un service public", "Aucune démarche", "Une démarche privée uniquement", "Interdit"],a:0,e:"Réponse non officielle : règles de vie en société.
+
+📌 À retenir : ce sont des règles de la vie quotidienne (démarches, santé, travail, école) et des droits/devoirs en société."},
+{t:"societe",q:"Auprès de quel organisme faut-il demander le remboursement des frais de santé ?",o:["Une démarche à effectuer auprès d’un service public", "Aucune démarche", "Une démarche privée uniquement", "Interdit"],a:0,e:"Réponse non officielle : règles de vie en société.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : ce sont des règles de la vie quotidienne (démarches, santé, travail, école) et des droits/devoirs en société."},
+{t:"societe",q:"La contraception :",o:["Une démarche à effectuer auprès d’un service public", "Aucune démarche", "Une démarche privée uniquement", "Interdit"],a:0,e:"Réponse non officielle : règles de vie en société.
+
+📌 À retenir : ce sont des règles de la vie quotidienne (démarches, santé, travail, école) et des droits/devoirs en société."},
+{t:"societe",q:"À quoi sert la carte Vitale ?",o:["Une démarche à effectuer auprès d’un service public", "Aucune démarche", "Une démarche privée uniquement", "Interdit"],a:0,e:"Réponse non officielle : règles de vie en société.
+
+📌 À retenir : ce sont des règles de la vie quotidienne (démarches, santé, travail, école) et des droits/devoirs en société."},
+{t:"societe",q:"À quoi sert une mutuelle santé ?",o:["Une démarche à effectuer auprès d’un service public", "Aucune démarche", "Une démarche privée uniquement", "Interdit"],a:0,e:"Réponse non officielle : règles de vie en société.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : ce sont des règles de la vie quotidienne (démarches, santé, travail, école) et des droits/devoirs en société."},
+{t:"societe",q:"Qu'est-ce que le tiers payant ?",o:["Ne pas avancer les frais chez certains professionnels de santé", "Payer deux fois", "Un prêt bancaire", "Une amende"],a:0,e:"Le tiers payant évite l’avance de frais.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : ce sont des règles de la vie quotidienne (démarches, santé, travail, école) et des droits/devoirs en société."},
+{t:"societe",q:"L'inscription à l'Assurance maladie est :",o:["Obligatoire pour toute personne résidant en France", "Facultative", "Réservée aux Français", "Payante"],a:0,e:"Toute personne résidant en France doit être affiliée à l'Assurance maladie.
+
+📌 À retenir : ce sont des règles de la vie quotidienne (démarches, santé, travail, école) et des droits/devoirs en société."},
+{t:"societe",q:"L'avortement est-il possible en France ?",o:["Une démarche à effectuer auprès d’un service public", "Aucune démarche", "Une démarche privée uniquement", "Interdit"],a:0,e:"Réponse non officielle : règles de vie en société.
+
+📌 À retenir : ce sont des règles de la vie quotidienne (démarches, santé, travail, école) et des droits/devoirs en société."},
+{t:"societe",q:"Travailler sans être déclaré est :",o:["Illégal et prive de droits sociaux", "Courant et toléré", "Autorisé pour les petits travaux", "Normal en période d'essai"],a:0,e:"Le travail dissimulé est un délit.
+
+✅ Astuce : le Code du travail encadre la relation employeur/salarié. En conflit, on peut saisir les prud’hommes.
+
+📌 À retenir : ce sont des règles de la vie quotidienne (démarches, santé, travail, école) et des droits/devoirs en société."},
+{t:"societe",q:"Qu'est-ce que le SMIC ?",o:["Une démarche à effectuer auprès d’un service public", "Aucune démarche", "Une démarche privée uniquement", "Interdit"],a:0,e:"Réponse non officielle : règles de vie en société.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+✅ Astuce : le Code du travail encadre la relation employeur/salarié. En conflit, on peut saisir les prud’hommes.
+
+📌 À retenir : ce sont des règles de la vie quotidienne (démarches, santé, travail, école) et des droits/devoirs en société."},
+{t:"societe",q:"Quelle est la première démarche à réaliser pour chercher un emploi ?",o:["Une démarche à effectuer auprès d’un service public", "Aucune démarche", "Une démarche privée uniquement", "Interdit"],a:0,e:"Réponse non officielle : règles de vie en société.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : ce sont des règles de la vie quotidienne (démarches, santé, travail, école) et des droits/devoirs en société."},
+{t:"societe",q:"Quelle est la durée légale du temps de travail par semaine ?",o:["35 heures", "32 heures", "39 heures", "40 heures"],a:0,e:"Durée légale : 35 heures par semaine.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+✅ Astuce : le Code du travail encadre la relation employeur/salarié. En conflit, on peut saisir les prud’hommes.
+
+📌 À retenir : ce sont des règles de la vie quotidienne (démarches, santé, travail, école) et des droits/devoirs en société."},
+{t:"societe",q:"Qui peut demander un congé parental d'éducation ?",o:["Une démarche à effectuer auprès d’un service public", "Aucune démarche", "Une démarche privée uniquement", "Interdit"],a:0,e:"Réponse non officielle : règles de vie en société.
+
+📌 À retenir : ce sont des règles de la vie quotidienne (démarches, santé, travail, école) et des droits/devoirs en société."},
+{t:"societe",q:"Une personne étrangère, en situation régulière, peut créer son entreprise :",o:["Une démarche à effectuer auprès d’un service public", "Aucune démarche", "Une démarche privée uniquement", "Interdit"],a:0,e:"Réponse non officielle : règles de vie en société.
+
+📌 À retenir : ce sont des règles de la vie quotidienne (démarches, santé, travail, école) et des droits/devoirs en société."},
+{t:"societe",q:"Une femme peut-elle créer son entreprise ?",o:["Une démarche à effectuer auprès d’un service public", "Aucune démarche", "Une démarche privée uniquement", "Interdit"],a:0,e:"Réponse non officielle : règles de vie en société.
+
+📌 À retenir : ce sont des règles de la vie quotidienne (démarches, santé, travail, école) et des droits/devoirs en société."},
+{t:"societe",q:"Quels sont les textes qui définissent les règles au travail ?",o:["Une démarche à effectuer auprès d’un service public", "Aucune démarche", "Une démarche privée uniquement", "Interdit"],a:0,e:"Réponse non officielle : règles de vie en société.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+✅ Astuce : le Code du travail encadre la relation employeur/salarié. En conflit, on peut saisir les prud’hommes.
+
+📌 À retenir : ce sont des règles de la vie quotidienne (démarches, santé, travail, école) et des droits/devoirs en société."},
+{t:"societe",q:"Quelles sont les affaires traitées par le conseil de prud'hommes ?",o:["Les litiges entre employeurs et salariés", "Les divorces", "Les crimes", "Les élections"],a:0,e:"Les prud’hommes jugent les litiges du travail.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+✅ Astuce : le Code du travail encadre la relation employeur/salarié. En conflit, on peut saisir les prud’hommes.
+
+📌 À retenir : ce sont des règles de la vie quotidienne (démarches, santé, travail, école) et des droits/devoirs en société."},
+{t:"societe",q:"Qui a le droit de se syndiquer ?",o:["Une démarche à effectuer auprès d’un service public", "Aucune démarche", "Une démarche privée uniquement", "Interdit"],a:0,e:"Réponse non officielle : règles de vie en société.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : ce sont des règles de la vie quotidienne (démarches, santé, travail, école) et des droits/devoirs en société."},
+{t:"societe",q:"Est-il possible de licencier une femme enceinte ou en congé maternité, en raison de sa grossesse ?",o:["Une démarche à effectuer auprès d’un service public", "Aucune démarche", "Une démarche privée uniquement", "Interdit"],a:0,e:"Réponse non officielle : règles de vie en société.
+
+📌 À retenir : ce sont des règles de la vie quotidienne (démarches, santé, travail, école) et des droits/devoirs en société."},
+{t:"societe",q:"L'instruction des enfants est obligatoire de :",o:["De 3 à 16 ans", "De 6 à 16 ans", "De 3 à 18 ans", "De 0 à 16 ans"],a:0,e:"L’instruction est obligatoire de 3 à 16 ans.
+
+✅ Astuce : l’instruction est obligatoire de 3 à 16 ans. L’école publique est laïque ; les règles s’appliquent à tous.
+
+📌 À retenir : ce sont des règles de la vie quotidienne (démarches, santé, travail, école) et des droits/devoirs en société."},
+{t:"societe",q:"Des parents ne respectent pas l'obligation d'instruction pour leurs enfants. Quelle sanction maximale risquent-ils ?",o:["Une démarche à effectuer auprès d’un service public", "Aucune démarche", "Une démarche privée uniquement", "Interdit"],a:0,e:"Réponse non officielle : règles de vie en société.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+✅ Astuce : l’instruction est obligatoire de 3 à 16 ans. L’école publique est laïque ; les règles s’appliquent à tous.
+
+📌 À retenir : ce sont des règles de la vie quotidienne (démarches, santé, travail, école) et des droits/devoirs en société."},
+{t:"societe",q:"Quelle est la définition de l'autorité parentale ?",o:["Une démarche à effectuer auprès d’un service public", "Aucune démarche", "Une démarche privée uniquement", "Interdit"],a:0,e:"Réponse non officielle : règles de vie en société.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : ce sont des règles de la vie quotidienne (démarches, santé, travail, école) et des droits/devoirs en société."},
+{t:"societe",q:"Quel motif d'absence est accepté par l'école ?",o:["Une démarche à effectuer auprès d’un service public", "Aucune démarche", "Une démarche privée uniquement", "Interdit"],a:0,e:"Réponse non officielle : règles de vie en société.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+✅ Astuce : l’instruction est obligatoire de 3 à 16 ans. L’école publique est laïque ; les règles s’appliquent à tous.
+
+📌 À retenir : ce sont des règles de la vie quotidienne (démarches, santé, travail, école) et des droits/devoirs en société."},
+{t:"societe",q:"Jusqu'à quel âge l'école est-elle obligatoire ?",o:["Une démarche à effectuer auprès d’un service public", "Aucune démarche", "Une démarche privée uniquement", "Interdit"],a:0,e:"Réponse non officielle : règles de vie en société.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+✅ Astuce : l’instruction est obligatoire de 3 à 16 ans. L’école publique est laïque ; les règles s’appliquent à tous.
+
+📌 À retenir : ce sont des règles de la vie quotidienne (démarches, santé, travail, école) et des droits/devoirs en société."},
+{t:"societe",q:"À quel âge commence l'instruction obligatoire des enfants ?",o:["De 3 à 16 ans", "De 6 à 16 ans", "De 3 à 18 ans", "De 0 à 16 ans"],a:0,e:"L’instruction est obligatoire de 3 à 16 ans.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+✅ Astuce : l’instruction est obligatoire de 3 à 16 ans. L’école publique est laïque ; les règles s’appliquent à tous.
+
+📌 À retenir : ce sont des règles de la vie quotidienne (démarches, santé, travail, école) et des droits/devoirs en société."},
+{t:"societe",q:"Comment s'appellent les établissements scolaires que les élèves intègrent après l'école élémentaire ?",o:["Le collège", "Le lycée", "L’université", "La maternelle"],a:0,e:"Après l’école élémentaire, on entre au collège.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+✅ Astuce : l’instruction est obligatoire de 3 à 16 ans. L’école publique est laïque ; les règles s’appliquent à tous.
+
+📌 À retenir : ce sont des règles de la vie quotidienne (démarches, santé, travail, école) et des droits/devoirs en société."},
+{t:"societe",q:"En tant que parent d'élève, il est possible de :",o:["Une démarche à effectuer auprès d’un service public", "Aucune démarche", "Une démarche privée uniquement", "Interdit"],a:0,e:"Réponse non officielle : règles de vie en société.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : ce sont des règles de la vie quotidienne (démarches, santé, travail, école) et des droits/devoirs en société."},
+{t:"societe",q:"Quelle instruction est prévue pour les enfants qui ne parlent pas français ?",o:["Une démarche à effectuer auprès d’un service public", "Aucune démarche", "Une démarche privée uniquement", "Interdit"],a:0,e:"Réponse non officielle : règles de vie en société.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+✅ Astuce : l’instruction est obligatoire de 3 à 16 ans. L’école publique est laïque ; les règles s’appliquent à tous.
+
+📌 À retenir : ce sont des règles de la vie quotidienne (démarches, santé, travail, école) et des droits/devoirs en société."},
+{t:"societe",q:"S'agissant de l'accueil des enfants en situation de handicap à l'école, laquelle des propositions est vraie ?",o:["Une démarche à effectuer auprès d’un service public", "Aucune démarche", "Une démarche privée uniquement", "Interdit"],a:0,e:"Réponse non officielle : règles de vie en société.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+✅ Astuce : l’instruction est obligatoire de 3 à 16 ans. L’école publique est laïque ; les règles s’appliquent à tous.
+
+📌 À retenir : ce sont des règles de la vie quotidienne (démarches, santé, travail, école) et des droits/devoirs en société."},
+{t:"societe",q:"Depuis le 1er juillet 2021, quelle est la durée du congé paternité ?",o:["28 jours", "11 jours", "14 jours", "32 jours"],a:0,e:"Depuis 2021, la durée est de 28 jours (naissance simple).
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : ce sont des règles de la vie quotidienne (démarches, santé, travail, école) et des droits/devoirs en société."},
+{t:"societe",q:"Est-ce possible de punir physiquement ses enfants ?",o:["Une démarche à effectuer auprès d’un service public", "Aucune démarche", "Une démarche privée uniquement", "Interdit"],a:0,e:"Réponse non officielle : règles de vie en société.
+
+✅ Astuce : retiens les sièges : Parlement (Strasbourg), Commission (Bruxelles), BCE (Francfort).
+
+📌 À retenir : ce sont des règles de la vie quotidienne (démarches, santé, travail, école) et des droits/devoirs en société."}
+];
+
+/* ═══════ ENGINE ═══════ */
+let Q=[],cur=0,sc=0,ts={},tI=null,tL=2700,rev=false,ans=false,errs=[];
+function sh(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+function prep(q){const ix=[0,1,2,3];sh(ix);return{...q,os:ix.map(i=>q.o[i]),ai:ix.indexOf(q.a)}}
+function pick(){const want={principes:11,institutions:6,droits:11,histoire:8,societe:4};let r=[];
+for(let t in want){let p=B.filter(q=>q.t===t);sh(p);r.push(...p.slice(0,Math.min(want[t],p.length)))}
+if(r.length<40){let rem=B.filter(q=>!r.includes(q));sh(rem);r.push(...rem.slice(0,40-r.length))}
+sh(r);return r.slice(0,40).map(prep)}
+
+function go(r){rev=!!r;cur=0;sc=0;errs=[];ts={};for(let k in TH)ts[k]={c:0,t:0};
+Q=pick();$('S0').classList.remove('on');$('S1').classList.add('on');
+if(!rev){tL=2700;tI=setInterval(tk,1000)}else $('timer').textContent='📖 Révision';showQ()}
+
+function tk(){tL--;const m=Math.floor(tL/60),s=tL%60;$('timer').textContent=`⏱ ${m}:${String(s).padStart(2,'0')}`;
+if(tL<=300)$('timer').style.color='#FF6B6B';if(tL<=0){clearInterval(tI);res()}}
+
+function showQ(){ans=false;const q=Q[cur],th=TH[q.t];
+$('pBar').style.width=(cur/Q.length*100)+'%';$('pTxt').textContent=`Question ${cur+1}/${Q.length}`;
+$('sTxt').textContent=`Score: ${sc}`;$('nbc').classList.remove('vi');
+const L='ABCD';let h=`<div class="qc"><span class="tt" style="background:${th.c}15;color:${th.c};border:1px solid ${th.c}30">${th.n}</span>
+<div class="qn">Question ${cur+1} / ${Q.length}</div><div class="qt">${q.q}</div><div class="opts">`;
+q.os.forEach((o,i)=>{h+=`<button class="ob" onclick="pk(${i})" id="o${i}"><span class="ol">${L[i]}</span><span>${o}</span></button>`});
+h+=`</div><div id="expl"></div></div>`;$('qBox').innerHTML=h;window.scrollTo({top:0,behavior:'smooth'})}
+
+function pk(i){if(ans)return;ans=true;const q=Q[cur],ok=i===q.ai;ts[q.t].t++;
+if(ok){sc++;ts[q.t].c++;$('o'+i).classList.add('ok')}
+else{$('o'+i).classList.add('ko');$('o'+q.ai).classList.add('ok');
+errs.push({q:q.q,th:TH[q.t].n,y:q.os[i],c:q.os[q.ai],e:q.e})}
+q.os.forEach((_,j)=>{$('o'+j).classList.add('lk')});$('sTxt').textContent=`Score: ${sc}`;
+$('expl').innerHTML=`<div class="ex ${ok?'eok':'eko'}"><strong>${ok?'✓ Bonne réponse !':'✗ Mauvaise réponse.'}</strong><br>${q.e}</div>`;
+$('nBtn').textContent=cur<Q.length-1?'Question suivante →':'Voir mes résultats';$('nbc').classList.add('vi')}
+
+function nxt(){cur++;cur>=Q.length?res():showQ()}
+function $(id){return document.getElementById(id)}
+
+function res(){if(tI)clearInterval(tI);$('S1').classList.remove('on');$('S2').classList.add('on');$('nbc').classList.remove('vi');
+const pct=Math.round(sc/Q.length*100),pass=pct>=80,tu=2700-tL,mn=Math.floor(tu/60),se=tu%60;
+let bd='';for(let k in TH){if(!ts[k].t)continue;const p=Math.round(ts[k].c/ts[k].t*100);
+const cl=p>=80?'var(--vert)':p>=50?'var(--or)':'var(--rouge)';
+bd+=`<div class="bi"><div class="tn"><span class="td" style="background:${TH[k].c}"></span><span>${TH[k].n}</span></div><span class="bsc" style="color:${cl}">${ts[k].c}/${ts[k].t}</span></div>`}
+let eh='';if(errs.length){
+eh=`<div class="errs"><button class="te" onclick="togE()"><span>❌ ${errs.length} erreur${errs.length>1?'s':''} — Voir les corrections</span><span class="ta" id="tA">▼</span></button><div class="el" id="eL">`;
+errs.forEach((e,i)=>{eh+=`<div class="ec"><div class="eth">${e.th}</div><div class="eqt">${i+1}. ${e.q}</div>
+<div class="ey">✗ Votre réponse : ${e.y}</div><div class="ecr">✓ Bonne réponse : ${e.c}</div><div class="eex">${e.e}</div></div>`});
+eh+=`</div></div>`}
+$('rBox').innerHTML=`<div class="rc"><div class="ri">${pass?'🎉':'📚'}</div><h2>${pass?'Félicitations !':'Continuez vos révisions'}</h2>
+<p style="color:var(--gtx);font-size:14px">${pass?'Vous avez atteint le seuil de 80%. Bravo !':'Il faut 32/40 (80%) pour réussir. Révisez les thèmes en difficulté.'}</p>
+<div class="sb">${sc}<span class="st"> / ${Q.length}</span></div>
+<div class="sbg"><div class="sbf" id="sFill" style="background:${pass?'var(--vert)':'var(--rouge)'}"></div><div class="sbt"></div></div>
+<div class="stl">Seuil : 80%</div>
+${!rev?`<p style="color:var(--gtx);font-size:12px;margin-top:10px">Temps : ${mn}min ${String(se).padStart(2,'0')}s</p>`:''}</div>
+<div class="rb"><h3>Résultats par thématique</h3>${bd}</div>
+${eh}
+<button class="bp" onclick="restart()">Recommencer (nouvelles questions)</button>
+<button class="bs" onclick="restart(1)">Mode révision (sans chrono)</button>
+<div class="share-box" style="margin-top:14px"><h3>📱 Partager ce QCM</h3>
+<p>Envoyez le fichier HTML par messagerie ou uploadez-le sur <a href="https://tiiny.host" target="_blank">tiiny.host</a> pour créer un lien partageable.</p>
+<div class="share-btns"><button class="sbtn" onclick="downloadHTML()">💾 Télécharger</button><button class="sbtn" onclick="shareFile()">📤 Partager</button></div></div>
+<div class="disc">⚠️ <strong>Entraînement non officiel.</strong> Consultez <a href="https://formation-civique.interieur.gouv.fr" target="_blank">formation-civique.interieur.gouv.fr</a> pour les ressources officielles.</div>`;
+setTimeout(()=>{$('sFill').style.width=pct+'%'},200);
+$('pBar').style.width='100%';$('pTxt').textContent='Terminé';$('sTxt').textContent=`Final: ${sc}/${Q.length}`;
+window.scrollTo({top:0,behavior:'smooth'})}
+
+function togE(){$('eL').classList.toggle('op');$('tA').classList.toggle('op')}
+function restart(r){$('S2').classList.remove('on');$('S0').classList.add('on');$('pBar').style.width='0';
+$('timer').style.color='';$('timer').textContent='⏱ 45:00';tL=2700;if(r)setTimeout(()=>go(1),100)}
+
+function getHTMLBlob(){const c=document.documentElement.cloneNode(true);
+// Remove any dynamic state
+const s=c.querySelectorAll('.sc');s.forEach(el=>{el.classList.remove('on')});
+c.querySelector('#S0').classList.add('on');
+return new Blob(['<!DOCTYPE html>\n'+c.outerHTML],{type:'text/html'})}
+
+function downloadHTML(){const b=getHTMLBlob();const u=URL.createObjectURL(b);
+const a=document.createElement('a');a.href=u;a.download='examen-civique-naturalisation.html';
+document.body.appendChild(a);a.click();document.body.removeChild(a);URL.revokeObjectURL(u);
+showT('💾 Fichier téléchargé !')}
+
+function shareFile(){const b=getHTMLBlob();
+const f=new File([b],'examen-civique-naturalisation.html',{type:'text/html'});
+if(navigator.canShare && navigator.canShare({files:[f]})){
+navigator.share({title:'Examen Civique — Entraînement Naturalisation',
+text:'Entraîne-toi pour l\'examen civique français avec ce QCM de 120 questions !',
+files:[f]}).catch(()=>downloadHTML())}
+else downloadHTML()}
+
+function showT(m){const t=$('toast');t.textContent=m;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2500)}
+</script>
+</body>
+</html>
